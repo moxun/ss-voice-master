@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/room_bg_operate_music"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+    <com.xiaweizi.marquee.MarqueeTextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:singleLine="true"
+        />
+    <ImageView
+        android:layout_marginStart="10dp"
+        android:id="@+id/iv_change_play_status"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/room_icon_music_operate_pause"/>
+</LinearLayout>
+

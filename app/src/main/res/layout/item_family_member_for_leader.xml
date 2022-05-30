@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?><!--    <com.qyx.base.widget.SwipeMenuLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/sm_layout">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/oprate_tv"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="76dp"-->
+<!--                android:background="#cccccc"-->
+<!--                android:text="管理"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/white"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/delete_tv"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="76dp"-->
+<!--                android:background="#FE4646"-->
+<!--                android:text="踢出"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/white"/>-->
+<!--        </LinearLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:padding="12dp">
+    <!--            <RelativeLayout-->
+    <!--                android:id="@+id/fl_item"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+
+    <!--                tools:ignore="MissingConstraints">-->
+    <!--                <ImageView-->
+    <!--                    android:padding="@dimen/dd_dp2"-->
+    <!--                    android:background="@drawable/bg_find_patriarch_bar"-->
+    <!--                    android:layout_width="55dp"-->
+    <!--                    android:id="@+id/iv_icon_bar"-->
+    <!--                    android:layout_height="55dp"-->
+    <!--                    android:layout_gravity="center"/>-->
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/user_icon"-->
+    <!--                    android:layout_width="53dp"-->
+    <!--                    android:layout_height="53dp"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/tv_idty"-->
+    <!--                    android:layout_width="37dp"-->
+    <!--                    android:layout_height="@dimen/sp17"-->
+    <!--                    android:background="@drawable/bg_patriarch"-->
+    <!--                    android:text="族长"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:layout_gravity="center_horizontal|bottom"/>-->
+    <!--            </RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/iv_icon_bar"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_find_patriarch_bar"
+        android:padding="@dimen/dd_dp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="@dimen/dd_dp2"
+        android:layout_marginBottom="@dimen/dd_dp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_idty"
+        android:layout_width="37dp"
+        android:layout_height="@dimen/sp17"
+        android:background="@drawable/bg_patriarch"
+        android:gravity="center"
+        android:text="族长"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_icon"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        app:layout_constraintRight_toLeftOf="@+id/user_icon"
+        tools:ignore="MissingConstraints" />
+
+    <!--          <ImageView- -->
+    <!--                android:id="@+id/iv_idty"-->
+    <!--                android:layout_width="28dp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="@+id/user_icon"-->
+    <!--                app:layout_constraintLeft_toRightOf="@+id/user_icon"-->
+    <!--                app:layout_constraintRight_toLeftOf="@+id/user_icon"-->
+    <!--                android:layout_height="14dp"-->
+    <!--                android:src="@drawable/icon_member_manager"/>-->
+
+    <TextView
+        android:id="@+id/user_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="@dimen/dd_dp10"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+
+        tools:ignore="MissingConstraints"
+        tools:text="喵喵酱" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+        app:layout_constraintLeft_toRightOf="@+id/user_nick"
+        app:layout_constraintTop_toTopOf="@+id/user_nick">
+
+        <com.miaomi.fenbei.base.widget.SexAndAgeView
+            android:id="@+id/user_age"
+            android:layout_width="30dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="6dp"
+            android:drawableStart="@drawable/base_sex_symbole"
+            android:drawablePadding="2dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+
+            tools:text="20" />
+
+        <com.miaomi.fenbei.base.widget.LevelView
+            android:id="@+id/iv_gongxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:scaleType="fitStart" />
+
+        <com.miaomi.fenbei.base.widget.LevelView
+            android:id="@+id/iv_meili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:scaleType="fitStart" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        app:layout_constraintTop_toBottomOf="@+id/user_nick"
+        tools:text="ID：123123213" />
+
+    <TextView
+        android:id="@+id/user_sign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="54dp"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_id"
+        tools:text="ID：123123213" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="46dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="@dimen/dd_dp30"
+        android:background="@drawable/common_button_enabled_style"
+        android:gravity="center"
+        android:text="进房"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_divided"
+        android:layout_width="46dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="@dimen/dd_dp30"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#987DB5"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/ll_admin"
+        android:layout_width="@dimen/dd_dp40"
+        android:layout_height="@dimen/dd_dp30"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f_icon_administration"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--    </com.qyx.base.widget.SwipeMenuLayout>-->
+
+
+
+
+

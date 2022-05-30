@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_to_rank"
+        android:layout_marginStart="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_home_top_three_right"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="45dp"
+        android:id="@+id/iv_rank_3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/common_avter_placeholder"
+        android:background="@drawable/bg_home_top_three"
+        android:padding="2dp"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="25dp"
+        android:id="@+id/iv_rank_2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/common_avter_placeholder"
+        android:background="@drawable/bg_home_top_three"
+        android:padding="2dp"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:id="@+id/iv_rank_1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/common_avter_placeholder"
+        android:background="@drawable/bg_home_top_three"
+        android:padding="2dp"/>
+
+
+</merge>

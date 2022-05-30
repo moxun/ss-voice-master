@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:drawable="@drawable/gift_bg_top_notify"
+        android:maxLevel="0"
+        android:minLevel="0"/>
+
+    <item
+        android:drawable="@drawable/xy_bg_big_gift"
+        android:maxLevel="1"
+        android:minLevel="1"/>
+
+    <item
+        android:drawable="@drawable/base_top_notify_open_noble"
+        android:maxLevel="2"
+        android:minLevel="2"/>
+
+    <item
+        android:drawable="@drawable/base_top_notify_treasures"
+        android:maxLevel="3"
+        android:minLevel="3"/>
+
+    <item
+        android:drawable="@drawable/base_top_notify_cj_xy"
+        android:maxLevel="4"
+        android:minLevel="4"/>
+
+    <item
+        android:drawable="@drawable/base_top_notify_zs_luck"
+        android:maxLevel="5"
+        android:minLevel="5"/>
+    <item
+        android:drawable="@drawable/base_top_notify_zs_dly"
+        android:maxLevel="6"
+        android:minLevel="6"/>
+
+    <item
+        android:drawable="@drawable/base_top_notify_tie_fan"
+        android:maxLevel="7"
+        android:minLevel="7"/>
+    <item
+        android:drawable="@drawable/base_top_notify_ai_fan"
+        android:maxLevel="8"
+        android:minLevel="8"/>
+</level-list>
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_search_et"
+    android:paddingTop="@dimen/dd_dp5"
+    android:paddingBottom="@dimen/dd_dp5"
+    android:paddingLeft="5dp"
+    android:paddingRight="2dp">
+
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:imeOptions="actionSearch"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:textSize="14dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="请输入家族的昵称或者ID"
+        android:textColorHint="#987DB5"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_publish_img_close"
+        android:layout_marginRight="@dimen/dd_dp15"
+        android:layout_gravity="center_vertical"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_clear"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/common_icon_text_clear"-->
+<!--        android:layout_gravity="center_vertical"/>-->
+</LinearLayout>

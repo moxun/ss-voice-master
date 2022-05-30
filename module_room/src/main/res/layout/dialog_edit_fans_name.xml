@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="50dp"
+    android:id="@+id/ll_bottom"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:minHeight="240dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/common_bg_dialog_common">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="修改粉丝昵称"
+        android:layout_marginTop="25dp"
+        android:textColor="#333333"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称需要4个字以内哦~"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        />
+
+    <EditText
+        android:background="#4AD8D8D8"
+        android:layout_marginTop="16dp"
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxLines="8"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_marginTop="35dp"
+        android:layout_width="155dp"
+        android:layout_height="33dp"
+        android:background="@drawable/common_bg_dialog_bt_right"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+</LinearLayout>

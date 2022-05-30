@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="NewApi">
+
+    <!-- 开启状态 -->
+    <item
+        android:id="@+id/state_on"
+        android:state_selected="true"
+        android:drawable="@drawable/main_tab_home_25"/>
+
+    <!-- 关闭状态 -->
+    <item
+        android:id="@+id/state_off"
+        android:state_selected="false"
+        android:drawable="@drawable/main_tab_home_uncheck_1"/>
+
+    <!-- 开启切换到关闭的动画 -->
+    <transition
+        android:fromId="@id/state_on"
+        android:toId="@id/state_off">
+        <animation-list>
+            <item
+                android:drawable="@drawable/main_tab_home_uncheck_1"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_uncheck_1"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_uncheck_1"
+                android:duration="40"/>
+
+        </animation-list>
+    </transition>
+
+    <!-- 关闭切换到开启的动画 -->
+    <transition
+        android:fromId="@id/state_off"
+        android:toId="@id/state_on">
+        <animation-list>
+            <item
+                android:drawable="@drawable/main_tab_home_1"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_2"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_3"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_4"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_5"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_6"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_7"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_8"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_9"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_10"
+
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_11"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_12"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_13"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_14"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_15"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_16"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_17"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_18"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_19"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_20"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_21"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_22"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_23"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_24"
+                android:duration="40"/>
+            <item
+                android:drawable="@drawable/main_tab_home_25"
+                android:duration="40"/>
+
+        </animation-list>
+    </transition>
+</animated-selector>
+

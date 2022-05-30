@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="5000钻石"
+        android:textColor="#B3FFFFFF"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_lineno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单：CZ212121213"
+        android:textColor="#B3FFFFFF"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/tv_createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="2018.11.30 10:30"
+        android:textColor="#B3FFFFFF"
+        android:textSize="12dp" />
+
+</RelativeLayout>

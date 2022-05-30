@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        app:alignItems="center"
+        app:flexWrap="wrap">
+        <ImageView
+            android:id="@+id/liang_emoji_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/common_user_icon_liang" />
+
+        <ImageView
+            android:id="@+id/role_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/room_icon_user_flag_manager"
+            android:visibility="visible" />
+        <com.miaomi.fenbei.common.weigdt.ColorfulFontTextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的昵称"
+            android:textSize="12dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#70E6FF"/>
+
+        <ImageView
+            android:id="@+id/iv_medal"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="5dp"
+             />
+
+
+
+        <com.miaomi.fenbei.base.widget.LevelView
+            android:id="@+id/wealth_level_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitStart"
+             />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/label_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginEnd="5dp" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <ImageView
+        android:id="@+id/msg_content_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/room_chat_history_bg"
+        android:paddingStart="10dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="9dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp" />
+</LinearLayout>

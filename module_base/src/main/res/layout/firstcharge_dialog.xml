@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="245dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dd_dp20"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal|bottom"
+    android:background="@drawable/bg_icon_first_charge">
+
+    <ImageView
+        android:id="@+id/iv_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dd_dp20"
+        android:src="@drawable/icon_btn_receive" />
+</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/first_del"/>
+</FrameLayout>

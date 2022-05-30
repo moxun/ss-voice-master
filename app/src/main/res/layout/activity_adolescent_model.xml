@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    android:gravity="center_horizontal"
+    android:background="#121a2a"
+    android:paddingBottom="15dp"
+    >
+
+    <include layout="@layout/common_toolbar"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_adolescent_model"/>
+    <TextView
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="#B3FFFFFF"
+        android:text="@string/adolescent_model_content"
+        android:lineSpacingExtra="1dp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/adolescent_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="12dp"
+        android:textColor="#AAA"
+        android:text="了解《未成年保护计划》"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/open_bt"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/common_button_enabled_style_new"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:text="开启青少年模式"/>
+
+
+</LinearLayout>

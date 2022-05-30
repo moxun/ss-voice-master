@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.wuyr:coffeedrawable:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ef2b2a3552db52afc5665390575c2f6/jetified-coffeedrawable-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ef2b2a3552db52afc5665390575c2f6/jetified-coffeedrawable-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ef2b2a3552db52afc5665390575c2f6/jetified-coffeedrawable-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wuyr/coffeedrawable/1.0.0/b8e853b1e98f75d633a773e41fc46320c8bbd29c/coffeedrawable-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wuyr/coffeedrawable/1.0.0/adc423510d2540555a106014e7ed54a52daf7cd3/coffeedrawable-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

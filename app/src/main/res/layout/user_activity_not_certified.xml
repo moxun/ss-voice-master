@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121a2a">
+    <include layout="@layout/common_toolbar"/>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_not_certified"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您需要进行实名认证才能创建家族哦！"
+            android:textColor="#7FFFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="@dimen/dd_dp60"
+            android:background="@drawable/base_bg_button_white"
+            android:text="实名认证"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+    <ImageView
+        android:id="@+id/iv_voicecircle_tab_icon"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="87dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:src="@drawable/icon_party_room"-->
+<!--        android:visibility="gone" />-->
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/bg_svga"
+        android:layout_width="136dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        app:autoPlay="true"
+        app:clearsAfterStop="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/sp10"
+        android:background="@drawable/party_room_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dd_dp8"
+        android:paddingTop="@dimen/dd_dp5"
+        android:paddingRight="@dimen/dd_dp8"
+        android:paddingBottom="@dimen/dd_dp5">
+
+        <ImageView
+            android:id="@+id/iv_room_gif"
+            android:layout_width="10dp"
+            android:layout_height="8dp"
+
+            />
+
+        <com.miaomi.fenbei.base.widget.DCBTextView
+            android:id="@+id/online_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dd_dp5"
+            android:text="999+"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+
+

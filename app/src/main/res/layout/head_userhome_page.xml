@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.miaomi.fenbei.base.widget.ClickViewPager
+        android:id="@+id/vp_cover"
+        android:layout_width="match_parent"
+        android:layout_height="365dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_user_homepage_info">
+
+
+        <FrameLayout
+            android:id="@+id/fl_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@id/ll_1"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_face"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/bg_user_home_page_face"
+                android:padding="1dp" />
+
+            <com.miaomi.fenbei.base.widget.InRoomView
+                android:id="@+id/irv_in_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal" />
+        </FrameLayout>
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/iv_in_room"
+            android:layout_width="111dp"
+            android:layout_height="68dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="92dp"
+            app:layout_constraintBottom_toTopOf="@id/fl_face"
+            app:layout_constraintEnd_toEndOf="@id/fl_face"
+            app:layout_constraintStart_toStartOf="@id/fl_face" />
+
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="XXX"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/fl_face"
+            app:layout_constraintTop_toTopOf="@id/fl_face" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_user_info_top_id"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintStart_toEndOf="@id/fl_face"
+            app:layout_constraintTop_toBottomOf="@id/tv_nickname">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text="XXX"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text="杭州"
+                android:textColor="#ffffffff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:text="100粉丝"
+                android:textColor="#ffffffff"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_0">
+
+            <com.miaomi.fenbei.base.widget.SexAndAgeView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:drawableStart="@drawable/base_bg_sex"
+                android:paddingStart="2dp"
+                android:paddingEnd="5dp"
+                android:text="22"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/sp10" />
+
+            <!--            <com.miaomi.fenbei.base.widget.SexView-->
+            <!--                android:id="@+id/iv_sex"-->
+            <!--                android:layout_width="18dp"-->
+            <!--                android:layout_height="18dp"-->
+            <!--                android:layout_marginEnd="4dp" />-->
+
+            <ImageView
+                android:id="@+id/nobility_iv"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="4dp" />
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/iv_gongxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitStart"
+                android:src="@drawable/common_bg_level_wealth" />
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/iv_meili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitStart"
+                android:src="@drawable/common_bg_level_charm" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_home_follow"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:padding="11dp"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="这家伙很懒，什么也没写"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="#33D589EE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sign" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:layout_marginEnd="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_selected"
+    android:layout_width="wrap_content"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/room_create_chat_lable"
+    android:gravity="center"
+    android:textColor="@drawable/room_text_create_chat"
+    android:textSize="14dp"/>

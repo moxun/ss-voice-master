@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="158dp"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="325dp"
+        android:layout_height="138dp"
+        android:background="@drawable/common_bg_dialog_common"
+        android:paddingBottom="12dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:paddingRight="33dp"
+            android:paddingLeft="33dp"
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="#ff303133"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@id/tv_title"
+            android:id="@+id/tv_content"
+            android:paddingRight="57dp"
+            android:paddingLeft="57dp"
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请填写邀请好友ID，开通成功后\n
+您的好友会获得一定比例的收益奖励\n
+若无人邀请，则直接去支付即可"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#ff919191"
+            android:textSize="11sp"
+            />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_marginTop="25dp"
+            android:id="@+id/et_content"
+            android:background="@drawable/input_bg_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColorHint="#ffc0c4cc"
+            android:textColor="#555555"
+            android:hint="输入好友ID（选填）"
+            android:layout_below="@id/tv_content"/>
+
+        <!--<ScrollView-->
+        <!--android:layout_above="@id/ll_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_title"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_centerInParent="true">-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="14sp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#666666"-->
+        <!--android:text="要提交上麦申请吗～"/>-->
+        <!--</ScrollView>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        android:gravity="center">
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:id="@+id/tv_left"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:background="@drawable/input_bg_1"
+            />
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:id="@+id/tv_right"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="去支付"
+            android:background="@drawable/common_bg_dialog_bt_right"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</FrameLayout>

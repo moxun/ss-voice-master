@@ -1,0 +1,1 @@
+include ':app', ':module_base', ':module_room', ':module_gift', ':module_imkit'

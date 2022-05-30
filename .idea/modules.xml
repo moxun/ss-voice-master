@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ss-voice-master.iml" filepath="$PROJECT_DIR$/.idea/modules/ss-voice-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ss-voice-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ss-voice-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_base/ss-voice-master.module_base.iml" filepath="$PROJECT_DIR$/.idea/modules/module_base/ss-voice-master.module_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_gift/ss-voice-master.module_gift.iml" filepath="$PROJECT_DIR$/.idea/modules/module_gift/ss-voice-master.module_gift.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_imkit/ss-voice-master.module_imkit.iml" filepath="$PROJECT_DIR$/.idea/modules/module_imkit/ss-voice-master.module_imkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_room/ss-voice-master.module_room.iml" filepath="$PROJECT_DIR$/.idea/modules/module_room/ss-voice-master.module_room.iml" />
+    </modules>
+  </component>
+</project>

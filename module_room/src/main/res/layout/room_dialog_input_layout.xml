@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_common_use_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:background="#2B0F56"
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.miaomi.fenbei.room.widget.InputEditText
+            android:id="@+id/word_chat_btn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_bg_1"
+            android:gravity="center_vertical"
+            android:hint="说点什么吧～"
+            android:imeOptions="actionSend"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/send_btn" />
+
+        <ImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/room_icon_bottom_emoji_btn" />
+
+        <TextView
+            android:id="@+id/send_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/common_button_enabled_style_new"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:visibility="gone"
+        android:background="#2B0F56"
+        android:id="@+id/vp_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+         />
+</LinearLayout>
+

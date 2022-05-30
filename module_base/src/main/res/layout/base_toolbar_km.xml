@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="15dp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@drawable/bg_tool_bar"
+        android:src="@drawable/bg_toolbar_back" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/bg_tool_bar"
+        android:src="@drawable/bg_toolbar_edit" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right|center_vertical"
+        android:padding="8dp"
+        android:background="@drawable/bg_tool_bar"
+        android:src="@drawable/bg_toolbar_more"
+        android:visibility="gone" />
+</FrameLayout>

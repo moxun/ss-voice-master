@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:background="@drawable/bg_room_bottom_dialog">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <ImageButton
+            android:layout_width="48dp"
+            android:id="@+id/back_btn"
+            android:padding="15dp"
+            android:src="@drawable/common_back_arrow_white"
+            android:layout_height="48dp"
+            android:background="@null"/>
+        <com.example.indicatorlib.views.TabLayout
+            android:id="@+id/tab_layout"
+            app:tabMode="scrollable"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:nts_active_color="@color/white"
+            app:nts_color="@color/white"
+            app:nts_size="18dp"
+            app:nts_weight="5dp"
+            app:nts_corners_radius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+</LinearLayout>

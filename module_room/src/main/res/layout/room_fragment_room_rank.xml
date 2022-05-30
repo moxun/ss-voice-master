@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/rank_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/room_rank_charm_bg"/>
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sp10"
+        android:background="@drawable/bg_room_rank_top"
+        >
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/tab_layout"
+            android:layout_width="244dp"
+            android:layout_height="38dp"
+
+           />
+
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_rank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_toolbar"/>
+
+
+</RelativeLayout>

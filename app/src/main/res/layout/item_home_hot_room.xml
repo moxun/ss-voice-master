@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="true"
+        app:hl_cornerRadius="4dp"
+        app:hl_dy="4dp"
+        app:hl_leftShow="false"
+        app:hl_shadowBackColor="@color/white"
+        app:hl_shadowColor="#2aFD7F8F"
+        app:hl_shadowLimit="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_hot_img">
+
+            <ImageView
+                android:id="@+id/chat_icon"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.miaomi.fenbei.base.widget.LableView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_home_top_hot_room_num"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/chat_icon"
+                app:layout_constraintLeft_toLeftOf="@+id/chat_icon">
+
+                <TextView
+                    android:id="@+id/online_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_home_hot_room_num"
+                    android:drawablePadding="5dp"
+                    android:text="999+"
+                    android:textColor="#ffffff"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:textColor="#222222"
+                android:textSize="10dp"
+                app:layout_constraintLeft_toLeftOf="@+id/chat_icon"
+                app:layout_constraintTop_toBottomOf="@+id/chat_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.lihang.ShadowLayout>
+</FrameLayout>

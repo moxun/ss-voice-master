@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/header_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/common_avter_placeholder"/>
+
+    <TextView
+        android:id="@+id/nick_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/header_iv"
+        app:layout_constraintTop_toTopOf="@id/header_iv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:text="清欢"
+        android:textColor="#ff606266"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/nick_tv"
+        app:layout_constraintBottom_toBottomOf="@id/header_iv"
+        android:layout_marginBottom="2dp"
+        android:text="15:36"
+        android:textColor="#ffa8a8a8"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/diamond_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="222"
+            android:textColor="#ff606266"
+            android:textSize="12dp"
+            android:drawablePadding="4dp"
+            android:drawableEnd="@drawable/icon_km_pay_kd_small"/>
+
+        <TextView
+            android:id="@+id/first_luck_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手气最佳"
+            android:layout_marginTop="2dp"
+            android:textColor="#ffffb22f"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#EFEFEF"
+        app:layout_constraintTop_toBottomOf="@id/header_iv"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

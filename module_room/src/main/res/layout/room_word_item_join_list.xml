@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="@drawable/room_chat_history_bg"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="9dp">
+
+        <ImageView
+            android:id="@+id/role_join_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/room_icon_user_flag_manager"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/liang_join_iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/common_user_icon_liang" />
+
+        <com.miaomi.fenbei.common.weigdt.ColorfulFontTextView
+            android:id="@+id/user_name_join_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"
+            android:textColor="#70E6FF"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/iv_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginEnd="5dp" />
+
+
+        <com.miaomi.fenbei.base.widget.LevelView
+            android:id="@+id/wealth_level_join_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/common_bg_level_wealth" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/label_join_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginEnd="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="来了"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="50dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginRight="@dimen/dd_dp5"
+        android:background="@drawable/common_button_enabled_style_new"
+        android:gravity="center"
+        android:text="欢迎Ta"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+</LinearLayout>

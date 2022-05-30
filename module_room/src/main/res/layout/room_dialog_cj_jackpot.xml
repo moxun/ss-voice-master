@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:id="@+id/content_fl">
+
+
+    <LinearLayout
+        android:background="@drawable/bg_dialog_cj_other"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:src="@drawable/icon_dialog_cj_wz"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|bottom"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jackpot_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:id="@+id/back_iv"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:src="@drawable/common_back_arrow_white"
+        android:layout_marginBottom="360dp"/>
+
+</FrameLayout>

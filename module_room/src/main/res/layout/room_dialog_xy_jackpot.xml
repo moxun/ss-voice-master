@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:id="@+id/content_fl">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:background="@drawable/bg_dialog_xy_other"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_dialog_xyc_title"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|bottom"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jackpot_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_back_arrow_white"
+        android:layout_marginBottom="340dp"/>
+</FrameLayout>

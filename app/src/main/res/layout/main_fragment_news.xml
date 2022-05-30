@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="消息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_read_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="@dimen/dd_dp2"
+            android:layout_marginRight="@dimen/dd_dp12"
+            android:background="@drawable/bg_im_read_type"
+            android:gravity="center"
+            android:padding="@dimen/dd_dp5"
+            android:text="全部已读"
+            android:textColor="#999999"
+            android:textSize="@dimen/dd_dp12"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/icon_clear_conversation_msg"
+
+
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dd_dp15"
+        android:layout_marginTop="@dimen/dd_dp10"
+        android:layout_marginRight="@dimen/dd_dp15"
+        android:paddingTop="10dp" />
+</LinearLayout>

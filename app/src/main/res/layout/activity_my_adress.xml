@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121a2a"
+    android:orientation="vertical"
+    android:paddingTop="24dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:src="@drawable/common_back_arrow_white" />
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_my_no_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/base_bg_button_white"
+            android:padding="@dimen/dd_dp5"
+            android:text="不使用"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="@dimen/dd_dp15">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/icon_dressup" />
+
+        <FrameLayout
+            android:id="@+id/fl_avter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_avter"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:src="@drawable/common_avter_placeholder" />
+
+            <com.miaomi.fenbei.base.BigMicSeatView
+                android:id="@+id/iv_icon"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fl_avter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/sp10"
+            android:text="小帅"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp16" />
+
+        <LinearLayout
+            android:id="@+id/ll_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="@dimen/sp10"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/iv_gongxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitStart"
+                android:src="@drawable/common_bg_level_wealth" />
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/iv_meili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:scaleType="fitStart"
+                android:src="@drawable/common_bg_level_charm" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_grade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_mine_sign"
+            android:paddingLeft="@dimen/dd_dp20"
+            android:paddingTop="@dimen/dd_dp5"
+            android:paddingRight="@dimen/dd_dp20"
+            android:paddingBottom="@dimen/dd_dp5"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dd_dp13" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.miaomi.fenbei.base.widget.KMDressIndicator
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

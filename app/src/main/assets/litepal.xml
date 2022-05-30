@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="kmi" />
+    <version value="3" />
+    <list>
+        <mapping class="com.miaomi.fenbei.base.bean.db.MusicBean" />
+        <mapping class="com.miaomi.fenbei.base.bean.event.ConversationBean" />
+        <mapping class="com.miaomi.fenbei.base.bean.CharmLevelBean" />
+        <mapping class="com.miaomi.fenbei.base.bean.WealthLevelBean" />
+    </list>
+
+</litepal>

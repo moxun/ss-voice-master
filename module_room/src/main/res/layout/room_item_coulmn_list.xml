@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dd_dp5">
+        <TextView
+            android:id="@+id/tv_coulmn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:00-18:00"
+            android:textColor="#99ffffff"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/dd_dp11"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tv_play_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已结束"
+            android:layout_marginTop="@dimen/dd_dp8"
+            android:textColor="#33ffffff"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coulmn_time"
+            android:textSize="@dimen/dd_dp11"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="@dimen/sp10"
+            android:layout_height="@dimen/sp10"
+            android:layout_marginRight="@dimen/dd_dp5"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@id/tv_play_state"
+            app:layout_constraintRight_toLeftOf="@id/tv_play_state"
+            app:layout_constraintTop_toTopOf="@id/tv_play_state"
+            android:background="@drawable/icon_play"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:gravity="center_horizontal"
+         android:layout_marginLeft="@dimen/dd_dp5"
+         android:orientation="vertical">
+         <TextView
+             android:id="@+id/tv_dot_not_play"
+             android:layout_width="6dp"
+             android:layout_height="6dp"
+             app:bl_corners_radius="6dp"
+             app:bl_solid_color="#959595"
+             tools:ignore="MissingPrefix" />
+         <TextView
+             android:id="@+id/tv_dot_play"
+             android:layout_width="6dp"
+             android:layout_height="6dp"
+             app:bl_corners_radius="6dp"
+             app:bl_solid_color="#FFFFFF"
+             tools:ignore="MissingPrefix" />
+<!--         android:background="@drawable/common_button_enabled_style"-->
+         <ImageView
+             android:layout_width="2dp"
+             android:layout_height="match_parent"
+             android:background="@drawable/icon_coulmn_line"/>
+     </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_column_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="@dimen/sp22"
+        android:layout_marginRight="@dimen/dd_dp12"
+      />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+           android:id="@+id/tv_coulmn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《深夜酒馆》"
+            android:textColor="#66ffffff"
+            android:textSize="@dimen/dd_dp14"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tv_coulmn_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日话题：知音难遇？"
+            android:layout_marginTop="@dimen/dd_dp3"
+            android:textColor="#66ffffff"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coulmn_title"
+            android:textSize="@dimen/dd_dp11"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/iv_avter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginTop="@dimen/dd_dp7"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coulmn_topic"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知音FM·小甜甜"
+            android:textColor="#66ffffff"
+            android:layout_marginLeft="@dimen/dd_dp5"
+            app:layout_constraintBottom_toBottomOf="@id/iv_avter"
+            app:layout_constraintLeft_toRightOf="@id/iv_avter"
+            app:layout_constraintTop_toTopOf="@id/iv_avter"
+            android:textSize="@dimen/dd_dp10"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.dreamtobe.kpswitch:library:1.6.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30905d8b41ae8326e73c8e87d345d74a/jetified-library-1.6.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30905d8b41ae8326e73c8e87d345d74a/jetified-library-1.6.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30905d8b41ae8326e73c8e87d345d74a/jetified-library-1.6.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.dreamtobe.kpswitch/library/1.6.1/5576755847d46b0914051d15ff9c5c47ca70b3df/library-1.6.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.dreamtobe.kpswitch/library/1.6.1/36811ccd8e17554b3319f4f80fd5177f261e00d9/library-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

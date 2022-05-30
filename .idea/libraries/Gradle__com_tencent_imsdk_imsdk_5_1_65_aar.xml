@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.imsdk:imsdk:5.1.65@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d96cfa5ed6f25c1b280f7389acf4f152/jetified-imsdk-5.1.65/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d96cfa5ed6f25c1b280f7389acf4f152/jetified-imsdk-5.1.65/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d96cfa5ed6f25c1b280f7389acf4f152/jetified-imsdk-5.1.65/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.imsdk/imsdk/5.1.65/7f3e7bacd78a77f0822f7abdb7ccf55e6f71ef49/imsdk-5.1.65-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

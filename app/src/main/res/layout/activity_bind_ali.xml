@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121a2a"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22FD7F8F"
+        android:padding="16dp"
+        android:text="根据相关法规，用户提现需要实名认证，此过程不涉及金钱账户，认证信息官方会严格保密。"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_setting_trans"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="请输入您的真实姓名"
+            android:inputType="text"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#33D589EE" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="请输入您的身份证号"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#33D589EE" />
+
+        <EditText
+            android:id="@+id/et_ali_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="请输入您的支付宝账号"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="#222222"
+            android:textColorHint="#999999"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_authentication"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/common_button_enabled_style_new"
+        android:gravity="center"
+        android:text="绑定"
+        android:textColor="@color/text_color_bt"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="支付宝账号信息需与个人认证信息一致"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121a2a"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@drawable/common_back_arrow_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="我的关注"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_size_18">
+
+        </TextView>
+
+        <!--        <com.example.indicatorlib.views.TabLayout-->
+        <!--            android:id="@+id/tab_layout"-->
+        <!--            app:tabMode="scrollable"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            app:nts_active_color="@color/white"-->
+        <!--            app:nts_color="@color/white"-->
+        <!--            app:nts_size="18dp"-->
+        <!--            app:nts_weight="5dp"-->
+        <!--            app:nts_corners_radius="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginBottom="10dp"/>-->
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.miaomi.fenbei.base.widget.search.SearchView
+            android:id="@+id/sv_search"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/room_common_bg_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+    </FrameLayout>
+
+    <com.miaomi.fenbei.base.widget.xrecyclerview.XRecyclerView
+        android:id="@+id/follow_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+</LinearLayout>

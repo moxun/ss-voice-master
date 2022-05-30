@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/dd_dp25"
+   >
+
+        <ImageView
+            android:id="@+id/iv_tab_icon"
+            android:layout_width="57dp"
+            android:layout_height="58dp"
+            android:src="@drawable/icon_party_tab_hot"
+           />
+       <TextView
+           android:id="@+id/tv_tab_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/dd_dp13"
+           android:layout_marginTop="@dimen/dd_dp6"
+           android:textColor="#CDB2E0"
+           android:text="热门"
+           />
+
+
+    </LinearLayout>
+
+

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.miaomi.fenbei.voice">
+
+    <uses-sdk tools:overrideLibrary="com.alipay.sdk,org.litepal,org.litepal.java,cn.sharesdk,com.airbnb.lottie,cn.sharesdk.onekeyshare" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- IM权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.miaomi.fenbei.voice.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/KMAppTheme"
+        tools:replace="android:name">
+        <meta-data
+            android:name="CHANNEL"
+            android:value="${CHANNEL}" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+
+        <!--        <service android:name="com.miaomi.fenbei.chatting.ChatService"/>-->
+
+
+        <activity
+            android:name="com.miaomi.fenbei.imkit.ui.PrivateChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.imkit.ui.conversation.StrangerConversationActivity"
+            android:label="打招呼"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.AllGiftActivity"
+            android:label="礼物墙"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.mine.redpack.RedPacketRecordActivity"
+            android:label="红包明细"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyHomeActivity"
+            android:label="家族房间"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyAdminCenterActivity"
+            android:label="家族详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyProportionActivity"
+            android:label="设置分成比例"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyWholeProportionActivity"
+            android:label="应用至全部成员"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyPartProportionActivity"
+            android:label="应用至部分成员"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyPartActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyAddPartActivity"
+            android:label="添加成员"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyRemoreAdminActivity"
+            android:label="管理员"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyAddAdminActivity"
+            android:label="添加管理员"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.family.FamilyApplyListActivity"
+            android:label="申请列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyMeActivity"
+            android:label="我的家族"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyListActivity"
+            android:label="申请列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyMemberActivity"
+            android:label="家族成员"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.CreateFamilyActivity"
+            android:label="创建家族"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.EditFamilyActivity"
+            android:label="我的家族"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.family.FamilySearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.family.FamilyCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".ui.ExchangePwdSettingActivity"
+            android:label="密码设置"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.BlackListActivity"
+            android:label="黑名单管理"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pyq.PublishPyqActivity"
+            android:label="发布动态"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pyq.PYQActivity"
+            android:label="朋友圈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pyq.PyqDetailsActivity"
+            android:label="朋友圈详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.room.music.MusicActivity"
+            android:label="音乐管理"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.BindBankCardActivity"
+            android:label="银行卡绑定"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PerfectPersonInfoActivity"
+            android:label="完善资料"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.InviteCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.ChatManagerActivity"
+            android:label="管理员设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ExpressRecordActivity"
+            android:label="表白墙"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HDCenterListActivity"
+            android:label="活动中心"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.CreateChatActivity"
+            android:label="创建房间"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.GetGoodNumberActivity"
+            android:label="获取靓号"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.RoomSettingActivity"
+            android:label="房间设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.RadioRoomSettingActivity"
+            android:label="房间设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.ColumnListActivity"
+            android:label="主播排挡节目单"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.ColumnEditActivity"
+            android:label="节目设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.room.AddManagerActivity"
+            android:label="添加管理员"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.dress.ShoppingMallActivity"
+            android:label="装扮商城"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.dress.MyDressActivity"
+            android:label="我的装扮"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.main.MainActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <data
+                    android:host="voice.kmi.com"
+                    android:scheme="kmi" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.search.SearchActivity"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.square.MakingFriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.pay.PayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.pay.PayHistroyActivity"
+            android:label="钻石明细"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.liya.voice.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.miaomi.liya.voice.wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.login.LoginByPhoneActivity"
+            android:label="账号登录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.login.LoginByPWDActivity"
+            android:label="账号登录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.login.LoginByPhoneGetYzmActivity"
+            android:label="账号登录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.login.FindPwdActivity"
+            android:label="找回密码"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.noble.NobleCenterActivity"
+            android:label="贵族特权"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.message.SystemMessageActivity"
+            android:label="官方消息"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.feedback.FeedbackActivity"
+            android:label="意见反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.phone_bind.PhoneBindActivity"
+            android:label="手机绑定"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.phone_bind.PhoneChangeActivity"
+            android:label="手机修改"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.ReportActivity"
+            android:label="举报"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.editinfo.EditUserInfoActivity"
+            android:label="编辑资料"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.BindAliActivity"
+            android:label="支付宝绑定"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.identity_authentication.NotCertifiedActivity"
+            android:label="创建家族"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.identity_authentication.IdentityAuthenticationActivity"
+            android:label="用户认证"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.cash_withdrawal.CashWithdrawalActivity"
+            android:label="提现"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.cash_withdrawal.CashOutRecordActivity"
+            android:label="提现记录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.about.AboutActivity"
+            android:label="关于我们"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.about.AgreementActivity"
+            android:label="协议"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.identity_authentication.AuthenticationDetailsActivity"
+            android:label="个人认证"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.identity_authentication.ExamineActivity"
+            android:label="个人认证"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.user_homepage.UserHomepageActivity"
+            android:label="个人主页"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.user_homepage.BigImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreViewImgAppTheme" />
+        <activity
+            android:name=".ui.mine.level.NewLevelActivity"
+            android:label="等级"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.balance.BalanceHistoryActivity"
+            android:label="兑换记录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.IncomeDetailsActivity"
+            android:label="收益明细"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.CallOnActivity"
+            android:label="来访"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.balance.NewBalanceExchangeActivity"
+            android:label="兑换"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.GiftHistoryActivity"
+            android:label="礼物明细"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miaomi.fenbei.voice.ui.mine.pwd.PwdSettingActivity"
+            android:label="密码设置"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.mine.adolescent.AdolescentModelPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.adolescent.AdolescentModelActivity"
+            android:label="青少年模式"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.account_manage.AccountManageActivity"
+            android:label="账号注销"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.ThirdUnBindActivity"
+            android:label="第三方解绑"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.account_manage.AccountLogoffActivity"
+            android:label="账号注销"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".ui.mine.editinfo.UserSettingActivity"
+            android:label="设置"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.account_manage.AccountSettingActivity"
+            android:label="账号管理"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.FollowRoomActivity"
+            android:label="收藏房间"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.MatchUserActivity"
+            android:label="收藏房间"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AllRoomActivity"
+            android:label="房间列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pay.PaymengActivity"
+            android:label="我的钱包"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101885341" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:configChanges">
+
+        </activity>
+
+        <activity
+            android:name="com.miaomi.fenbei.base.web.WebActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="@string/common_authorities"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <service android:name="com.miaomi.fenbei.base.RoomService" />
+        <!-- *********************************************IM组件************************************************************************ -->
+        <!-- 【必须】消息收发service -->
+        <!--  消息收发 service -->
+        <service
+            android:name="com.tencent.imsdk.session.remote.SessionService"
+            android:process=":network" />
+        <!--  消息收发辅助 service -->
+        <service
+            android:name="com.tencent.imsdk.session.remote.AssistService"
+            android:process=":network" />
+        <service
+            android:name="com.tencent.imsdk.session.remote.KeepAliveJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":network" />
+        <!--  离线消息广播接收器 -->
+        <receiver android:name="com.tencent.imsdk.session.SessionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.imsdk.session.boot" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 一键登录 start -->
+        <activity
+            android:name="cc.lkme.linkaccount.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogStyle"></activity>
+        <!-- 一键登录 end -->
+
+        <!--中国移动 start-->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogStyle"></activity>
+        <!--中国移动 end-->
+
+
+    </application>
+
+</manifest>

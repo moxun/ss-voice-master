@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/base_layout_word_list_select_gp"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/base_layout_word_list_select_lt"
+        android:textColor="#ffffffff"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/tv_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/base_layout_word_list_select_lw"
+        android:textColor="#ffffffff"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/tv_guangchang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/base_layout_word_list_select_gb"
+        android:textColor="#ffffffff"
+        android:textSize="13sp" />
+
+</merge>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_greate_god_record_dialog"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="31dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="按住录音"
+            android:textColor="#ff2b2b2b"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@id/iv_record"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.miaomi.fenbei.base.widget.CircularProgressButton
+            android:id="@+id/iv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/icon_great_god_recording"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:progColor="@color/colorPrimary"
+            app:backColor="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/iv_audition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_great_god_audition"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rerecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="重置"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_rerecord"
+            app:layout_constraintRight_toRightOf="@id/iv_rerecord"
+            app:layout_constraintTop_toBottomOf="@id/iv_rerecord" />
+
+        <TextView
+
+            android:id="@+id/tv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="录音"
+            android:textColor="#999999"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_record"
+            app:layout_constraintRight_toRightOf="@id/iv_record"
+            app:layout_constraintTop_toBottomOf="@id/iv_record" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="上传"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_save"
+            app:layout_constraintRight_toRightOf="@id/iv_save"
+            app:layout_constraintTop_toBottomOf="@id/iv_save" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:src="@drawable/icon_great_god_save"
+            app:layout_constraintBottom_toBottomOf="@id/iv_audition"
+            app:layout_constraintLeft_toRightOf="@id/iv_record"
+            app:layout_constraintTop_toTopOf="@id/iv_audition" />
+
+        <ImageView
+            android:id="@+id/iv_rerecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="62dp"
+            android:src="@drawable/icon_great_god_rereord"
+            app:layout_constraintBottom_toBottomOf="@id/iv_audition"
+            app:layout_constraintRight_toLeftOf="@id/iv_audition"
+            app:layout_constraintTop_toTopOf="@id/iv_audition" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

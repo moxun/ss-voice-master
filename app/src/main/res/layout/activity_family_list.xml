@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121a2a">
+
+    <FrameLayout
+        android:paddingTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/dd_dp5"
+                android:layout_marginLeft="@dimen/dd_dp8"
+                android:padding="8dp"
+                android:src="@drawable/common_back_arrow_white"
+                />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#FFFFFF"
+               android:text="家族"
+               android:layout_centerInParent="true"
+               android:textSize="@dimen/dimen_size_18"/>
+            <TextView
+                android:id="@+id/tv_creat_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dd_dp3"
+                android:paddingBottom="@dimen/dd_dp3"
+                android:paddingLeft="@dimen/sp10"
+                android:paddingRight="@dimen/sp10"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_search_btn"
+                android:layout_marginRight="@dimen/dd_dp5"
+                android:background="@drawable/base_bg_button_white"
+                android:text="创建家族"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+          <ImageView
+              android:id="@+id/iv_search_btn"
+           android:layout_width="23dp"
+           android:layout_height="23dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="@dimen/dd_dp15"
+           android:background="@drawable/common_icon_search"
+             />
+        </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="85dp"
+               android:layout_marginTop="63dp"
+               android:layout_marginRight="@dimen/dd_dp15"
+               android:layout_marginLeft="@dimen/dd_dp15"
+               android:background="@drawable/bg_f_icon_me"
+               android:orientation="horizontal">
+               <ImageView
+                   android:id="@+id/iv_family"
+                   android:layout_width="@dimen/dd_dp55"
+                   android:layout_height="@dimen/dd_dp55"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="@dimen/dd_dp15"
+                 />
+               <TextView
+                   android:id="@+id/tv_me_family"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="我的家族"
+                   android:layout_marginLeft="@dimen/dd_dp12"
+                   android:textSize="@dimen/dd_dp16"
+                   android:textColor="@color/white"
+                   android:layout_marginRight="@dimen/dd_dp15"
+                   android:drawableEnd="@drawable/me_icon_arrow"
+                   android:gravity="center_vertical"
+                   />
+
+<!--               <ImageView-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:src=""/>-->
+           </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dp50"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+>
+<!--            android:background="@drawable/f_tab_bg"-->
+            <com.miaomi.fenbei.base.widget.QYXFamilyRankIndicator
+                android:id="@+id/tl_family"
+                android:layout_width="wrap_content"
+                 android:padding="@dimen/dd_dp1"
+                android:layout_height="32dp"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_family"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

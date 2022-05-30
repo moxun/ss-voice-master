@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_content"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/bg_dialog_dt_top">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/iv_face"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/iv_face"
+            app:layout_constraintTop_toTopOf="@id/iv_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/iv_face"
+            app:layout_constraintBottom_toBottomOf="@id/iv_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="14dp"
+                android:text="本周热力值"
+                android:textColor="#99ffffff"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝量"
+                android:textColor="#99ffffff"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/tv_fans"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="10sp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="83dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="1px"
+            android:layout_height="39dp"
+            android:background="#FFFFFF"
+            />
+
+        <LinearLayout
+            app:layout_constraintStart_toEndOf="@id/tv_line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="21sp"
+                />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主播排名"
+                android:textColor="#99ffffff"
+                android:textSize="9sp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/icon_radio_right"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_marginTop="47dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#19FFFFFF"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排名"
+            android:textColor="#66ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热力值"
+            android:textColor="#66ffffff"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <com.miaomi.fenbei.base.widget.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_rank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="#19FFFFFF"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_join_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="主播已有0名粉丝，快来加入吧～"
+            android:textColor="#ffffffff"
+            android:textSize="13sp" />
+
+        <TextView
+
+            android:id="@+id/tv_join_fans"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/icon_join_fans_group"
+            android:textColor="#ffffffff"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ypx.yimagepicker:support:2.4.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45962ce32ecc44b00a2ec8b6c706f083/jetified-support-2.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45962ce32ecc44b00a2ec8b6c706f083/jetified-support-2.4.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45962ce32ecc44b00a2ec8b6c706f083/jetified-support-2.4.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ypx.yimagepicker/support/2.4.2/64aef23f97763235f821ca31045aa2ba0d527897/support-2.4.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ypx.yimagepicker/support/2.4.2/f8f02d11f7672739c91360514afe42dd14886849/support-2.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:paddingStart="16dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="9dp"
+    android:paddingTop="12dp"
+    >
+
+
+
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/remote_voice_ctrl_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:background="@drawable/room_remote_voice_select"-->
+<!--        android:button="@color/transparent"-->
+<!--        android:visibility="gone"-->
+<!--        android:checked="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/msg_btn" />-->
+
+    <ImageView
+        android:id="@+id/iv_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/room_icon_bottom_emoji_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/msg_btn" />
+    <ImageView
+        android:id="@+id/msg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/room_icon_bottom_msg_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/more_btn" />
+    <ImageView
+        android:id="@+id/more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/room_icon_bottom_more_n"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/mic_status" />
+
+
+    <ImageView
+        android:id="@+id/mic_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/room_icon_bottom_open_mic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/game_btn" />
+
+    <ImageView
+        android:id="@+id/game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/room_icon_bottom_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/send_gift_btn"/>
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/mic_go_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/bg_mic_go_btn"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/send_gift_btn"-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/send_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/room_icon_bottom_gift_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/word_chat_btn"
+        android:layout_width="74dp"
+        android:layout_height="38dp"
+        android:text="聊聊天~"
+        android:textColor="#ffb0a0c2"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:background="@drawable/bg_room_bottom_bt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/msg_notice"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/room_red_point"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/msg_btn"
+        app:layout_constraintTop_toTopOf="@+id/msg_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

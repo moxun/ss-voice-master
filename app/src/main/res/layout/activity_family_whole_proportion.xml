@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121a2a"
+   >
+    <include layout="@layout/common_toolbar"/>
+
+    <RadioGroup
+        android:id="@+id/rg_proportion"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/sp10"
+        android:layout_marginLeft="@dimen/dd_dp20"
+        android:layout_marginRight="@dimen/dd_dp20"
+       android:paddingRight="@dimen/dd_dp15"
+        android:paddingLeft="@dimen/dd_dp15"
+        android:background="@drawable/bg_family_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_whole_70"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dp50"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp15"
+            android:button="@null"
+
+            android:drawableRight="@drawable/bg_proport_radio_whole"
+            android:layoutDirection="rtl"
+            android:textDirection="ltr"
+            android:text="70%" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5E2C94"/>
+        <RadioButton
+            android:id="@+id/rb_whole_60"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dp50"
+            android:drawableRight="@drawable/bg_proport_radio_whole"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp15"
+            android:button="@null"
+            android:layoutDirection="rtl"
+            android:textDirection="ltr"
+            android:text="60%" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#5E2C94"/>
+        <RadioButton
+            android:id="@+id/rb_whole_50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dd_dp50"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp15"
+            android:button="@null"
+            android:drawableRight="@drawable/bg_proport_radio_whole"
+            android:layoutDirection="rtl"
+            android:textDirection="ltr"
+            android:text="50%" />
+    </RadioGroup>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#7fFFFFFF"
+      android:layout_margin="@dimen/dd_dp20"
+      android:textSize="@dimen/dd_dp12"
+      android:text="家族长可在该页面设置家族成员的提现分成比例，保存设置后立即生效。"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+<Button
+    android:id="@+id/bt_preser"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dd_dp50"
+    android:text="保存"
+    android:textColor="#FFFFFF"
+    android:textSize="@dimen/dd_dp16"
+    android:layout_margin="@dimen/dd_dp30"
+    android:gravity="center"
+    android:background="@drawable/gift_send_all_bg_n"/>
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_item_express_record"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="10-09 01:10"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_gift"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天天气很好"
+        android:textColor="#C19AEC"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/iv_gift"
+        app:layout_constraintStart_toStartOf="@id/iv_gift"
+        app:layout_constraintTop_toTopOf="@id/tv_send"
+        app:layout_constraintBottom_toBottomOf="@id/tv_send"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text=""
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_gift"
+        app:layout_constraintStart_toEndOf="@id/iv_gift"
+        app:layout_constraintTop_toTopOf="@id/iv_gift" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text=""
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_gift"
+        app:layout_constraintEnd_toStartOf="@id/iv_gift"
+        app:layout_constraintTop_toTopOf="@id/iv_gift" />
+
+    <FrameLayout
+        android:id="@+id/fl_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/iv_gift"
+        app:layout_constraintEnd_toStartOf="@id/iv_gift"
+        app:layout_constraintTop_toTopOf="@id/iv_gift"
+        android:layout_marginEnd="53dp">
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            />
+
+        <com.miaomi.fenbei.base.MicSeatView
+            android:id="@+id/iv_send_seat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天天气很好"
+        android:textColor="#C19AEC"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/fl_send"
+        app:layout_constraintStart_toStartOf="@id/fl_send"
+        app:layout_constraintTop_toBottomOf="@id/fl_send" />
+
+    <FrameLayout
+        android:id="@+id/fl_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_gift"
+        app:layout_constraintStart_toEndOf="@id/iv_gift"
+        app:layout_constraintTop_toTopOf="@id/iv_gift">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_recive"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <com.miaomi.fenbei.base.MicSeatView
+            android:layout_gravity="center"
+            android:id="@+id/iv_get_seat"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_recive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天天气很好"
+        android:textColor="#C19AEC"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/fl_get"
+        app:layout_constraintStart_toStartOf="@id/fl_get"
+        app:layout_constraintTop_toBottomOf="@id/fl_get" />
+
+    <com.xiaweizi.marquee.MarqueeTextView
+        android:id="@+id/tv_express_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:text="对Ta表白说：云想衣裳花想容"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_gift_name" />
+
+    <com.miaomi.fenbei.base.widget.HeartMeView
+        android:visibility="gone"
+        android:id="@+id/iv_heart_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_express"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_express" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_heart_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="等88人送上祝福"
+        android:textColor="#C19AEC"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_express"
+        app:layout_constraintStart_toEndOf="@id/iv_heart_me"
+        app:layout_constraintTop_toTopOf="@id/tv_express" />
+
+    <TextView
+        android:id="@+id/tv_express"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:visibility="gone"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_express_bt"
+        android:gravity="center"
+        android:text="祝福"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_express_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

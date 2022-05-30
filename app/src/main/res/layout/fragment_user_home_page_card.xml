@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_all_gift_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:drawablePadding="2dp"
+                android:drawableStart="@drawable/icon_rec_gift_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得礼物"
+                android:textColor="#80ffffff"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_has_gift"
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:layout_marginStart="22dp"
+                android:drawablePadding="2dp"
+                android:drawableStart="@drawable/icon_rec_star_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点亮星星"
+                android:textColor="#80ffffff"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_start_count"
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="76"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_star_explain"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="集星说明"
+                android:gravity="end"
+                android:drawablePadding="2dp"
+                android:drawableEnd="@drawable/icon_gift_star_explain"
+                android:textColor="#4Dffffff"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/rv_gift_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

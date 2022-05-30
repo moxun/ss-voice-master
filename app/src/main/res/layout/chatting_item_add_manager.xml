@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/user_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/user_nick"
+            android:textSize="14dp"
+            android:textColor="#222222"
+            android:includeFontPadding="false"
+            tools:text = "喵喵酱"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"/>
+
+        <com.miaomi.fenbei.base.widget.SexView
+            android:id="@+id/user_sex"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+            app:layout_constraintLeft_toRightOf="@+id/user_nick"
+            app:layout_constraintTop_toTopOf="@+id/user_nick"
+            />
+        <com.miaomi.fenbei.base.widget.LevelView
+            app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+            app:layout_constraintTop_toTopOf="@+id/user_nick"
+            app:layout_constraintLeft_toRightOf="@+id/user_sex"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/iv_gongxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.miaomi.fenbei.base.widget.LevelView
+            app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+            app:layout_constraintTop_toTopOf="@+id/user_nick"
+            app:layout_constraintLeft_toRightOf="@+id/iv_gongxian"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/iv_meili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:textSize="10dp"
+            android:includeFontPadding="false"
+            android:textColor="#666666"
+            app:layout_constraintTop_toBottomOf="@+id/user_nick"
+            android:layout_marginTop="11dp"
+            tools:text = "ID：123123213"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_setting"
+        android:textColor="#FFFFFF"
+        android:text="设置"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:background="@drawable/user_bg_hot_chat_status"
+        android:layout_width="48dp"
+        android:layout_height="26dp"/>
+</LinearLayout>

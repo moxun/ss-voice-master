@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/wechat_logoff_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:id="@+id/wechat_authorization_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信授权(未授权)"
+            android:textColor="#ff222222"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/wechat_logoff_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="去解绑>"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/qq_logoff_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/qq_authorization_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ授权(未授权)"
+            android:textColor="#ff222222"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/qq_logoff_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="去解绑>"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

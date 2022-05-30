@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/room_white_8_top_round_bg"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:visibility="gone"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:drawablePadding="5dp"
+                android:text="会员等级展示说明"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dd_dp15"
+            android:paddingTop="@dimen/dd_dp15"
+            android:text="1钻石==1经验值"
+            android:layout_marginStart="6dp"
+            android:textColor="#222222"
+            android:textSize="14dp"
+            />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:background="#A847FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:drawablePadding="5dp"
+                android:text="等级权益"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grade_icon_level_p"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="等级图标"
+                    android:textColor="#ff222222"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="45dp"
+                    android:layout_height="16dp"
+                    android:text="Lv.1开启"
+                    android:textColor="#cc999999"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grade_icon_await"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="敬请期待"
+                    android:textColor="#ff222222"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="45dp"
+                    android:layout_height="16dp"
+                    android:text="Lv.?开启"
+                    android:textColor="#cc999999"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:background="#A847FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:drawablePadding="5dp"
+                android:text="等级说明"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="等级"
+               android:layout_marginLeft="@dimen/sp22"
+                android:textColor="#ff555555"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="等级图标"
+                android:textColor="#ff555555"
+                android:textSize="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="需要经验值"
+                android:textColor="#ff555555"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFE8E8E8"
+            android:layout_marginLeft="@dimen/dd_dp15"
+            android:layout_marginRight="@dimen/dd_dp15"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+</LinearLayout>

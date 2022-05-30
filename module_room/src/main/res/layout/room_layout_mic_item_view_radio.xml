@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.miaomi.fenbei.base.widget.WaveView
+        android:id="@+id/item_mic_water"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_mic_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_radio_mic_item"
+        app:layout_constraintBottom_toBottomOf="@id/item_mic_water"
+        app:layout_constraintLeft_toLeftOf="@id/item_mic_water"
+        app:layout_constraintRight_toRightOf="@id/item_mic_water"
+        app:layout_constraintTop_toTopOf="@id/item_mic_water" />
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="32dp"
+        android:layout_height="11dp"
+        android:src="@drawable/bg_radio_fan_card"
+        app:layout_constraintBottom_toBottomOf="@id/item_mic_icon"
+        app:layout_constraintEnd_toEndOf="@id/item_mic_icon"
+        app:layout_constraintStart_toStartOf="@id/item_mic_icon"
+        />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_mic_seat"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/item_mic_water"
+        app:layout_constraintLeft_toLeftOf="@id/item_mic_water"
+        app:layout_constraintRight_toRightOf="@id/item_mic_water"
+        app:layout_constraintTop_toTopOf="@id/item_mic_water" />
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/item_mic_seat_svga"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="@id/item_mic_water"
+        app:layout_constraintLeft_toLeftOf="@id/item_mic_water"
+        app:layout_constraintRight_toRightOf="@id/item_mic_water"
+        app:layout_constraintTop_toTopOf="@id/item_mic_water" />
+
+    <ImageView
+        android:id="@+id/item_mic_lock"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/room_icon_mic_lock"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/item_mic_water"
+        app:layout_constraintLeft_toLeftOf="@id/item_mic_water"
+        app:layout_constraintRight_toRightOf="@id/item_mic_water"
+        app:layout_constraintTop_toTopOf="@id/item_mic_water" />
+
+    <TextView
+        android:id="@+id/item_mic_status"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:background="@drawable/room_mic_status_disable"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/item_mic_icon"
+        app:layout_constraintEnd_toEndOf="@+id/item_mic_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_default_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1号麦"
+        android:textColor="#80ffffff"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_mic_icon" />
+    <TextView
+        android:id="@+id/item_mic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_mic_icon" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_emoji_icon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/item_mic_water"
+        app:layout_constraintLeft_toLeftOf="@id/item_mic_water"
+        app:layout_constraintRight_toRightOf="@id/item_mic_water"
+        app:layout_constraintTop_toTopOf="@id/item_mic_water" />
+
+    <LinearLayout
+        android:id="@+id/item_mic_charm_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:background="@drawable/room_bg_charm"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_default_position">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_item_mic_charm_layout"/>
+
+        <com.miaomi.fenbei.base.widget.DCBTextView
+            android:id="@+id/item_mic_charm_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:minWidth="40dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="8dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</merge>

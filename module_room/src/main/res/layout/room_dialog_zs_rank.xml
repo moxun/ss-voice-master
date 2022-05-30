@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:orientation="vertical"
+        android:background="@drawable/room_bg_zs_buy_ticket">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="@dimen/dd_dp30"
+            android:layout_marginTop="@dimen/dd_dp25"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/room_icon_zs_back"/>
+
+        <com.miaomi.fenbei.base.widget.ZSRankIndicator
+            android:background="@drawable/room_bg_zs_indicator_gift"
+            android:id="@+id/title_tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/content_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/icon_title_rank"/>
+</FrameLayout>

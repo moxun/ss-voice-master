@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        kapt {
+            arguments {
+                arg("moduleName", project.getName())
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            consumerProguardFiles   'proguard-rules.pro'
+        }
+
+        release {
+            consumerProguardFiles   'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':module_base')
+    kapt rootProject.ext.arouter
+//    testImplementation 'junit:junit:4.12'
+
+}

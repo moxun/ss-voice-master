@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/iv_svg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:gravity="center_vertical"
+        android:background="@drawable/icon_jc_huanshen"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:paddingStart="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="100dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        tools:text="1223124242532" />
+</merge>

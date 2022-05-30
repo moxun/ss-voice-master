@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_all_gift_wall"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/sp10"
+   >
+
+    <RatingBar
+        style="@style/file_frag_bar"
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:isIndicator="true"
+        android:layout_marginTop="@dimen/sp10"
+        android:layout_marginRight="@dimen/sp10"
+        android:numStars="3"
+         />
+ <TextView
+     android:id="@+id/tv_unchecked"
+     android:textSize="@dimen/sp10"
+     android:textColor="#7Fffffff"
+     android:text="未获得"
+     android:padding="@dimen/dd_dp3"
+     android:layout_gravity="end"
+     android:background="@drawable/bg_item_unchecked_gift_wall"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/gift_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+
+        android:id="@+id/gift_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gift_iv" />
+
+    <TextView
+        android:id="@+id/num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#666666"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@id/gift_name_tv"
+        app:layout_constraintLeft_toRightOf="@id/gift_name_tv"
+        app:layout_constraintTop_toTopOf="@id/gift_name_tv" />
+
+
+</LinearLayout>

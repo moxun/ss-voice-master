@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    定义轨道的背景-->
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/room_bg_zs_progressbar"/>
+    <!--  定义已完成部分的样式-->
+<!--    <item android:id="@android:id/progress"-->
+<!--        android:top="2dp"-->
+<!--        android:left="2dp"-->
+<!--        android:bottom="2dp"-->
+<!--        android:end="2dp"-->
+<!--        android:drawable="@drawable/room_bg_zs_luck_progressbar_complete"/>-->
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <scale
+                android:scaleWidth="100%"
+                android:drawable="@drawable/room_bg_zs_luck_progressbar_complete_new"/>
+        </clip>
+    </item>
+
+</layer-list>

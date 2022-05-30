@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom"
+    android:layout_width="325dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/common_bg_dialog_common"
+    android:gravity="center"
+    android:minHeight="200dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="举报"
+        android:textColor="#222222"
+        android:textSize="18dp" />
+
+    <com.miaomi.fenbei.room.widget.GridRadioGroup
+        android:id="@+id/report_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <RadioButton
+            android:id="@+id/report_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/login_agreement_check"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="上传色情、暴力、政治等违规信息"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/report_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/login_agreement_check"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="恶意刷屏、滥发广告"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/report_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/login_agreement_check"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="辱骂玩家，聚众闹事"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/report_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/login_agreement_check"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="其他"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+    </com.miaomi.fenbei.room.widget.GridRadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#666666"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_bg_dialog_bt_right"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

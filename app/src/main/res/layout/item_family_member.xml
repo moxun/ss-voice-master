@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/user_icon"-->
+        <!--                android:layout_width="53dp"-->
+        <!--                android:layout_height="53dp"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                />-->
+
+
+        <ImageView
+            android:id="@+id/iv_icon_bar"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_find_patriarch_bar"
+            android:padding="@dimen/dd_dp2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="@dimen/dd_dp2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_idty"
+            android:layout_width="37dp"
+            android:layout_height="@dimen/sp17"
+            android:background="@drawable/bg_patriarch"
+            android:gravity="center"
+            android:text="族长"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_icon"
+            app:layout_constraintLeft_toRightOf="@+id/user_icon"
+            app:layout_constraintRight_toLeftOf="@+id/user_icon" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/iv_idty"-->
+        <!--            android:layout_width="28dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/user_icon"-->
+        <!--            app:layout_constraintLeft_toRightOf="@+id/user_icon"-->
+        <!--            app:layout_constraintRight_toLeftOf="@+id/user_icon"-->
+        <!--            android:layout_height="14dp"-->
+        <!--            android:src="@drawable/icon_member_manager"/>-->
+
+        <TextView
+            android:id="@+id/user_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/dd_dp10"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@+id/user_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="喵喵酱" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+            app:layout_constraintLeft_toRightOf="@+id/user_nick"
+            app:layout_constraintTop_toTopOf="@+id/user_nick">
+
+            <com.miaomi.fenbei.base.widget.SexAndAgeView
+                android:id="@+id/user_age"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="4dp"
+                android:drawableStart="@drawable/base_sex_symbole"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                tools:text="20" />
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/iv_gongxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitStart" />
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/iv_meili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical"
+                android:scaleType="fitStart" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@+id/user_icon"
+            app:layout_constraintTop_toBottomOf="@+id/user_nick"
+            tools:text="ID：123123213" />
+
+        <TextView
+            android:id="@+id/user_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="54dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@+id/user_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_id"
+            tools:text="ID：123123213" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:background="@drawable/common_button_enabled_style"
+            android:gravity="center"
+            android:text="进房"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

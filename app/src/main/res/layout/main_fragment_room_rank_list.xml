@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/base_room_bottom"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.miaomi.fenbei.base.widget.RankRoomTopView23
+                android:id="@+id/rank_top_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="30dp" />
+
+            <com.miaomi.fenbei.base.widget.RankRoomTopView1
+                android:id="@+id/rank_top_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" />
+
+            <com.miaomi.fenbei.base.widget.RankRoomTopView23
+                android:id="@+id/rank_top_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        app:bl_corners_topLeftRadius="12dp"
+        app:bl_corners_topRightRadius="12dp"
+        app:bl_solid_color="#ffffff">
+
+        <com.miaomi.fenbei.base.widget.xrecyclerview.XRecyclerView
+            android:id="@+id/rv_rank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dd_dp60"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_get_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dd_dp12"
+            android:text="未上榜"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp11" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="13dp" />
+
+        <TextView
+            android:id="@+id/tv_room_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dd_dp8"
+            android:text="您的房间距上榜还差：99"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp11" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_room_masonry"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dd_dp12"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dd_dp3"
+                android:layout_marginEnd="@dimen/dd_dp5" />
+
+            <TextView
+                android:id="@+id/tv_earning_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="342"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_go_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dd_dp12"
+            android:text="去创建房间 >"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp12"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/iv_svg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/iv_xq_svg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <com.miaomi.fenbei.gift.widget.EnterRoomNotifyView
+        android:id="@+id/view_enter_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.miaomi.fenbei.gift.widget.GiftTopNotifyAnim
+        android:id="@+id/top_danmu_one"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="vertical" />
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/iv_svg_noble_online"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.miaomi.fenbei.gift.widget.ExpressGiftTopNotifyAnim
+        android:id="@+id/top_danmu_express"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="vertical" />
+
+
+
+</merge>

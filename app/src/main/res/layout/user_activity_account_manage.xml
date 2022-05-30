@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121a2a"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:text="1.账号注销后，账号信息，身份信息，联系人信息，授权信息将被全部清除且无法恢复"
+        android:lineSpacingExtra="8dp"
+        android:padding="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:text="2.送礼明细，交易记录，虚拟货币，背包道具，余额等都将作废清除且无法恢复"
+        android:lineSpacingExtra="8dp"
+        android:padding="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:text="3.账号一旦注销，将无法再次使用账号登录平台，且同时会解除第三方账号的绑定关系。"
+        android:lineSpacingExtra="8dp"
+        android:padding="16dp"/>
+    <TextView
+
+        android:id="@+id/account_logoff_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="已确认风险，确认继续"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/common_button_enabled_style_new"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+
+
+
+</LinearLayout>

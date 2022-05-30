@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#987DB5"
+        android:layout_gravity="center_horizontal"
+
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="11dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <LinearLayout
+            android:id="@+id/ll_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/iv_other"
+                android:layout_width="44dp"
+                android:layout_height="44dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/chat_bg_msg_text_chat_item_o"
+                android:minWidth="200dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_other_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="送你10个【玫瑰花】"
+                    android:textColor="#ff303133"
+                    android:textSize="15dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/iv_other_gift" />
+
+                <TextView
+                    android:id="@+id/tv_other_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10钻石"
+                    android:textColor="#ff808080"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_other_gift"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_other_gift"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="23dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/tv_other_content"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_me"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_me">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:minWidth="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="23dp"
+                    android:background="@drawable/chat_bg_msg_text_chat_item_m">
+                    <TextView
+                        android:id="@+id/tv_me_content"
+                        app:layout_constraintRight_toLeftOf="@id/iv_me_gift"
+                        app:layout_constraintTop_toTopOf="@id/iv_me_gift"
+                        android:layout_width="wrap_content"
+                        android:minWidth="136dp"
+                        android:layout_height="wrap_content"
+                        android:text="送你10个【玫瑰花】"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_me_price"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_me_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10钻石"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        />
+                    <ImageView
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/iv_me_gift"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="28dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已读"
+                    android:textColor="@drawable/bg_text_read"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

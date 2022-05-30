@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/room_chat_history_bg"
+    android:paddingStart="10dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="8dp"
+    app:alignItems="center"
+    app:flexDirection="row"
+    app:flexWrap="wrap">
+
+    <TextView
+        android:id="@+id/chest_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <com.miaomi.fenbei.common.weigdt.ColorfulFontTextView
+        android:id="@+id/chest_from_username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="100dp"
+        android:textColor="#70E6FF"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="赠送"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <com.miaomi.fenbei.common.weigdt.ColorfulFontTextView
+        android:id="@+id/chest_to_username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="100dp"
+        android:textColor="#70E6FF"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/chest_gift_iv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <com.miaomi.fenbei.base.widget.DCBTextView
+        android:id="@+id/chest_gift_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+
+</com.google.android.flexbox.FlexboxLayout>

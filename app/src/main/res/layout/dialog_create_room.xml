@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/room_white_8_top_round_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="29dp"
+        >
+        <TextView
+            android:id="@+id/tv_create_party"
+            android:drawableTop="@drawable/icon_open_live_party"
+            android:drawablePadding="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="派对开播"
+            android:textColor="#ff555555"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:drawablePadding="12dp"
+            android:id="@+id/tv_create_person"
+            android:drawableTop="@drawable/icon_open_live_person"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="个人开播"
+            android:textColor="#ff555555"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_input_close_bt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="21dp"/>
+</LinearLayout>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@android:id/background"
+        
+        android:drawable="@drawable/app_unchecked_stars" />
+<!--    <item-->
+<!--        android:id="@android:id/secondaryProgress"-->
+<!--        android:drawable="@drawable/app_unchecked_stars" />-->
+    <!--进度样式-->
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/app_checked_stars" />
+</layer-list>

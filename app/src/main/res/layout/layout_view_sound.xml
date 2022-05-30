@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_content"
+        android:layout_width="180dp"
+        android:paddingStart="4dp"
+        android:paddingRight="4dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/bg_km_sound_view"/>
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="@dimen/dd_dp16"
+        android:layout_height="@dimen/dd_dp16"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/dd_dp10"
+        android:layout_marginTop="@dimen/dd_dp10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_start_paly"/>
+
+    <ImageView
+        android:id="@+id/iv_play_status"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/dd_dp10"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/iv_status"
+        app:layout_constraintTop_toTopOf="@id/tv_content"
+        app:layout_constraintBottom_toBottomOf="@id/iv_status"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/tv_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_content"
+        app:layout_constraintRight_toRightOf="@id/tv_content"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="15"
+        android:textColor="@color/white"
+        android:layout_marginEnd="14dp"/>
+
+    <ImageView
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/iv_delate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_record_delate"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

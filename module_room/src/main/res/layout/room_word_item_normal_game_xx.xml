@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/liang_iv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/common_user_icon_liang" />
+
+            <com.miaomi.fenbei.common.weigdt.ColorfulFontTextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="我的昵称"
+                android:textColor="#70E6FF"
+                android:textSize="12dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp">
+
+                <ImageView
+
+                    android:id="@+id/iv_medal_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_medal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="6dp"
+                    android:textColor="@color/white"
+                    android:textSize="7dp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_medal"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="5dp" />
+
+
+            <ImageView
+                android:id="@+id/role_iv"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/room_icon_user_flag_manager"
+                android:visibility="visible" />
+
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/wealth_level_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/common_bg_level_wealth" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/label_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/bg_ssq_word_list"
+            android:gravity="center_vertical"
+            android:minWidth="160dp"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dd_dp12"
+    android:layout_marginBottom="@dimen/dd_dp12"
+    android:orientation="horizontal">
+   <TextView
+       android:id="@+id/tv_family_index"
+       android:layout_width="@dimen/sp22"
+       android:layout_height="@dimen/dd_dp15"
+       android:layout_gravity="center_vertical"
+       android:gravity="center"
+       android:textSize="@dimen/dd_dp12"
+       android:textColor="#D3C5F6"
+       android:layout_marginRight="@dimen/dd_dp12"
+       android:text=""/>
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dd_dp12" />
+
+    <LinearLayout
+        android:layout_width="252dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_family_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="家族名字家族名字"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_family_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家族名字家族名字"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--        <ImageView-->
+    <!--            android:layout_width="@dimen/dd_dp11"-->
+    <!--            android:layout_height="@dimen/dd_dp13"-->
+    <!--            android:layout_marginRight="@dimen/dd_dp5"-->
+    <!--            android:src="@drawable/f_icon_fire"/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.miaomi.fenbei.base.widget.DCBTextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dd_dp3"
+            android:drawableLeft="@drawable/f_icon_fire"
+            android:drawablePadding="@dimen/dd_dp5"
+            android:text="人气值"
+            android:textColor="#C274FF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="47dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="@dimen/dd_dp6"
+            android:visibility="gone"
+            android:background="@drawable/common_button_enabled_style_new"
+            android:gravity="center"
+            android:text="申请"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dd_dp10" />
+    </LinearLayout>
+
+</LinearLayout>

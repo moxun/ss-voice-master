@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yyued:SVGAPlayer-Android:2.5.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2c4512d4fb510a1c366f915d59d3c99/jetified-SVGAPlayer-Android-2.5.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2c4512d4fb510a1c366f915d59d3c99/jetified-SVGAPlayer-Android-2.5.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2c4512d4fb510a1c366f915d59d3c99/jetified-SVGAPlayer-Android-2.5.8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yyued/SVGAPlayer-Android/2.5.8/d3493a87c4552db7f2625eff5c1197bd7e9efb93/SVGAPlayer-Android-2.5.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

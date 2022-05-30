@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/authentication_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="#464646"
+            android:text="身份认证"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/room_user_icon_gray_right_point"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E4E7ED"/>
+
+        <TextView
+            android:id="@+id/phone_bind_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="#464646"
+            android:text="手机绑定"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/room_user_icon_gray_right_point"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E4E7ED"/>
+
+        <TextView
+            android:id="@+id/pwd_setting_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="#464646"
+            android:text="密码管理"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/room_user_icon_gray_right_point"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logout_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:textColor="#464646"
+        android:text="注销账号"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/room_user_icon_gray_right_point"/>
+
+
+</LinearLayout>

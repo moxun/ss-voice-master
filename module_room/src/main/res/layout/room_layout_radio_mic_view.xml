@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fl_host_info"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dd_dp15"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/dd_dp15"
+        android:background="@drawable/room_icon_radio_bg"
+        tools:ignore="MissingConstraints">
+
+        <com.miaomi.fenbei.room.widget.RadioMicItemView
+            android:id="@+id/mic_1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_no_column"
+            android:drawableStart="@drawable/icon_radio_no_coulum"
+            android:drawablePadding="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无栏目，请耐心等待～"
+            app:layout_constraintBottom_toBottomOf="@id/mic_1_layout"
+            app:layout_constraintStart_toEndOf="@id/mic_1_layout"
+            app:layout_constraintTop_toTopOf="@id/mic_1_layout"
+            android:textColor="#ffffffff"
+            android:textSize="13sp"
+            />
+
+        <com.miaomi.fenbei.room.widget.MarqueeTextView
+            android:id="@+id/tv_radio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@id/mic_1_layout"
+            app:layout_constraintLeft_toRightOf="@id/mic_1_layout"
+            app:layout_constraintTop_toTopOf="@id/mic_1_layout"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="200dp"
+            android:minWidth="82dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_radio_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=""-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="@dimen/dd_dp19"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/mic_1_layout"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/mic_1_layout"-->
+<!--            app:layout_constraintTop_toTopOf="@id/mic_1_layout"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+        <TextView
+            android:id="@+id/tv_radio_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sp30"
+            android:layout_marginRight="@dimen/dd_dp15"
+            android:gravity="center_vertical"
+            android:text="17:00-18:00"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dd_dp11"
+            app:layout_constraintBottom_toBottomOf="@id/tv_radio_title"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_radio_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dd_dp5"
+            android:text="今日话题：觅知音觅知音觅知音觅知音…"
+            android:textColor="#FFF9D1"
+            android:textSize="@dimen/dd_dp12"
+            app:layout_constraintStart_toStartOf="@id/tv_radio_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_radio_title"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dd_dp15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tv_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                android:textColor="@drawable/text_on_off"
+                android:textSize="@dimen/dd_dp7" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dd_dp5"
+                android:layout_marginRight="@dimen/dd_dp5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/room_icon_radio_button" />
+
+                <ImageView
+                    android:id="@+id/iv_radio_button_spot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/room_icon_radio_button_spot" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ON"
+                android:textColor="@drawable/text_on_off"
+                android:textSize="@dimen/dd_dp7" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_mic"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/fl_host_info"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/room_icon_radio_mic_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/ll_join_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dd_dp4"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/room_icon_radio_fan_group"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_anchor_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sp10" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dd_dp5"
+                android:layout_marginTop="@dimen/sp20"
+                android:src="@drawable/right_arrow" />
+
+            <LinearLayout
+                android:id="@+id/mic_area1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.miaomi.fenbei.room.widget.RadioMicItemView
+                    android:id="@+id/mic_2_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.miaomi.fenbei.room.widget.RadioMicItemView
+                    android:id="@+id/mic_3_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.miaomi.fenbei.room.widget.RadioMicItemView
+                    android:id="@+id/mic_4_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.miaomi.fenbei.room.widget.RadioMicItemView
+                    android:id="@+id/mic_5_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

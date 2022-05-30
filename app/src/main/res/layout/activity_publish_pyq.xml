@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121a2a">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/dd_dp25"
+        android:id="@+id/toolbar">
+
+
+        <ImageButton
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="48dp"
+            android:id="@+id/back_btn"
+            android:src="@drawable/common_back_arrow_white"
+            android:background="@null"
+
+            android:layout_height="48dp"/>
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="15dp" />
+<!--        android:background="@drawable/bg_publish_find_bt"-->
+        <TextView
+
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/common_button_enabled_style"
+            android:textColor="#7FFFFFFF"
+            android:text="发布"
+            android:paddingStart="9dp"
+            android:paddingEnd="9dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textSize="14dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:background="@null"
+        android:minHeight="140dp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="与世界分享此刻..."
+        android:textColorHint="#E3E3E3"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:maxLines="15"
+        />
+    <TextView
+        android:id="@+id/tv_text_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/200"
+        android:gravity="right"
+        android:maxLength="200"
+        android:paddingEnd="21dp"
+        android:textColor="#7FFFFFFF"
+        android:textSize="12sp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_select_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="21dp">
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_new_publish_photo"/>
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/icon_new_publish_video"/>
+        <ImageView
+            android:id="@+id/iv_sound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/icon_new_publish_sound"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sound"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:orientation="horizontal">
+
+        <com.miaomi.fenbei.voice.widget.KMSoundView
+            android:id="@+id/sound_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_record_again"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_publish_gary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新录制"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete_record"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_publish_gary"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:scaleType="center"
+            android:src="@drawable/icon_publish_delete_record"
+            />
+
+    </LinearLayout>
+    <com.miaomi.fenbei.base.widget.TMVideoView
+
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121a2a">
+    <include layout="@layout/common_toolbar"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_authentication_success"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="认证成功"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="#B3FFFFFF"
+            android:text="真实姓名"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#B3FFFFFF"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="#B3FFFFFF"
+            android:text="身份证号"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:textColor="#B3FFFFFF"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:maxLength="18"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#222222"
+            android:text="手机号码："
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="6dp"
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:textColor="#222222"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:maxLength="18"/>
+    </LinearLayout>
+</LinearLayout>

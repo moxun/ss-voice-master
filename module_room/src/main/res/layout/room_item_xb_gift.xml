@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+    
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:padding="2dp"
+        android:background="@drawable/bg_room_item_xb_gift"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100钻石"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        />
+</LinearLayout>

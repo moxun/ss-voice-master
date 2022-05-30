@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingTop="24dp">
+
+    <SurfaceView
+        android:id="@+id/mSurfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:text="00:02" />
+
+    <Button
+        android:id="@+id/mBtnPlay"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/register_btn_play_video_n"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mSurfaceview"
+        app:layout_constraintEnd_toEndOf="@+id/mSurfaceview"
+        app:layout_constraintStart_toStartOf="@+id/mSurfaceview"
+        app:layout_constraintTop_toTopOf="@+id/mSurfaceview" />
+
+
+    <TextView
+        android:id="@+id/record_hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="@string/record_hint1"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/record_hint2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/record_hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:text="@string/record_hint2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.miaomi.fenbei.base.widget.CircularProgressButton
+        android:id="@+id/circleProgressBar"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="37dp"
+        app:backColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:progColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/mBtnRecording"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_video_btn_recording_s"
+        app:layout_constraintBottom_toBottomOf="@+id/circleProgressBar"
+        app:layout_constraintLeft_toLeftOf="@+id/circleProgressBar"
+        app:layout_constraintRight_toRightOf="@+id/circleProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/circleProgressBar" />
+
+    <Button
+        android:id="@+id/mBtnRecord"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:background="@drawable/bg_video_btn_recording_n"
+        android:text="录制"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/circleProgressBar"
+        app:layout_constraintLeft_toLeftOf="@+id/circleProgressBar"
+        app:layout_constraintRight_toRightOf="@+id/circleProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/circleProgressBar" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/record_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="video_player,again_tv,audit"></androidx.constraintlayout.widget.Group>
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/record_hint4"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/again_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/again_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/record_again"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/audit"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/again_iv"-->
+    <!--        android:layout_width="12dp"-->
+    <!--        android:layout_height="12dp"-->
+    <!--        app:layout_constraintLeft_toRightOf="@+id/again_tv"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/again_tv"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/again_tv"-->
+    <!--        />-->
+
+    <Button
+        android:id="@+id/audit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/common_button_enabled_style"
+        android:text="@string/record_audit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/common_back_arrow_white" />
+
+
+        <ImageView
+            android:id="@+id/check_camera_status"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="15dp"
+            android:src="@drawable/icon_check_photo_status" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

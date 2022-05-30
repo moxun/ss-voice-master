@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:id="@+id/content_fl">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:background="@drawable/bg_dialog_cj_integral"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/back_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:src="@drawable/common_back_arrow_white"
+            android:layout_marginBottom="340dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            app:layout_constraintTop_toTopOf="@id/back_iv"
+            app:layout_constraintBottom_toBottomOf="@id/back_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分兑换"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/tv_exchage_record"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_cj_integral_exchange_records"
+            app:layout_constraintTop_toTopOf="@id/back_iv"
+            app:layout_constraintBottom_toBottomOf="@id/back_iv"
+            app:layout_constraintEnd_toStartOf="@id/tv_rule"/>
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（当前积分: 0）"
+            android:textColor="#ffdec5ff"
+            android:textSize="13sp"
+            />
+
+        <ImageView
+            android:id="@+id/tv_rule"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_cj_integral_rule"
+            app:layout_constraintTop_toTopOf="@id/back_iv"
+            app:layout_constraintBottom_toBottomOf="@id/back_iv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_exchange"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_integral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffe39e"
+            android:textSize="13sp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="13dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    android:background="@drawable/base_bg_in_room">
+
+    <ImageView
+        android:id="@+id/iv_online"
+        android:layout_width="10dp"
+        android:layout_height="8dp"
+        android:visibility="gone"
+        android:src="@drawable/base_icon_in_room"/>
+
+    <TextView
+        android:layout_marginStart="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live"
+        android:textColor="#ffffffff"
+        android:textSize="8sp"
+        />
+
+</LinearLayout>

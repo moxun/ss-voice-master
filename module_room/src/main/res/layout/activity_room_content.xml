@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/tv_party_room_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_room_bottom_bt"
+        android:drawableStart="@drawable/room_icon_small_hot_yellow"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:text="距离上一位差123"
+        android:textColor="#ffffffff"
+        android:textSize="11sp"
+        android:visibility="invisible" />
+
+    <TextView
+
+        android:id="@+id/tv_open_mortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_room_bottom_bt"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:text="启动"
+        android:textColor="#ffffffff"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+    <!--    <TextView-->
+    <!--        android:layout_toEndOf="@id/tv_open_mortal"-->
+    <!--        android:id="@+id/tv_setting_mortal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingStart="4dp"-->
+    <!--        android:paddingEnd="4dp"-->
+    <!--        android:paddingTop="2dp"-->
+    <!--        android:paddingBottom="2dp"-->
+    <!--        android:layout_marginStart="11dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:background="@drawable/bg_room_bottom_bt"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="设置"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:textColor="#ffffffff"-->
+    <!--        android:textSize="11sp" />-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fl_host_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.miaomi.fenbei.base.widget.WaveView
+            android:id="@+id/mic_water"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/host_icon_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/mic_water"
+            app:layout_constraintEnd_toEndOf="@id/mic_water"
+            app:layout_constraintStart_toStartOf="@id/mic_water"
+            app:layout_constraintTop_toTopOf="@id/mic_water" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/host_emoji_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            app:layout_constraintBottom_toBottomOf="@id/mic_water"
+            app:layout_constraintEnd_toEndOf="@id/mic_water"
+            app:layout_constraintStart_toStartOf="@id/mic_water"
+            app:layout_constraintTop_toTopOf="@id/mic_water" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/host_seat_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@id/mic_water"
+            app:layout_constraintEnd_toEndOf="@id/mic_water"
+            app:layout_constraintStart_toStartOf="@id/mic_water"
+            app:layout_constraintTop_toTopOf="@id/mic_water" />
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/host_mic_seat_svga"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:layout_constraintBottom_toBottomOf="@id/mic_water"
+            app:layout_constraintLeft_toLeftOf="@id/mic_water"
+            app:layout_constraintRight_toRightOf="@id/mic_water"
+            app:layout_constraintTop_toTopOf="@id/mic_water" />
+
+        <TextView
+            android:id="@+id/host_mic_status"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/host_icon_iv"
+            app:layout_constraintEnd_toEndOf="@+id/host_icon_iv" />
+
+        <LinearLayout
+            android:id="@+id/host_mic_charm_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/room_bg_charm"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="6dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/host_icon_iv">
+
+            <ImageView
+                android:id="@+id/item_tv_mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_item_mic_charm_layout" />
+
+            <com.miaomi.fenbei.base.widget.DCBTextView
+                android:id="@+id/host_charm_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minWidth="40dp"
+                android:paddingStart="4dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/host_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/host_mic_charm_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_mvp_face"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/room_bg_mvp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_mvp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <com.miaomi.fenbei.room.widget.KmMicView
+        android:id="@+id/mic_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_host_info"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_open_mortal"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:drawablePadding="4dp"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:paddingTop="4dp"-->
+    <!--        android:paddingBottom="4dp"-->
+    <!--        android:text="灵兽牌 >"-->
+    <!--        android:textColor="#fffeaf7d"-->
+    <!--        android:textSize="12dp" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:id="@+id/tv_room_gift_history"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawablePadding="4dp"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:text="礼物记录"-->
+    <!--        android:textColor="#CCFFFFFF"-->
+    <!--        android:textSize="13dp"-->
+    <!--        android:paddingStart="8dp"-->
+    <!--        android:paddingEnd="8dp"-->
+    <!--        android:paddingBottom="4dp"-->
+    <!--        android:paddingTop="4dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:drawableStart="@drawable/icon_room_gift_history" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mic_rv"
+        android:orientation="vertical">
+
+        <com.miaomi.fenbei.base.widget.WordListSelectedView
+            android:id="@+id/word_selet_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp" />
+
+        <com.miaomi.fenbei.room.widget.TopMsgView
+            android:id="@+id/tmv_top_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="95dp" />
+
+        <com.miaomi.fenbei.base.widget.ChatLineRecyclerView
+            android:id="@+id/word_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_msg_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/room_new_msg_bg"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:text="99+新消息"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+
+    <com.miaomi.fenbei.base.widget.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        app:banner_layout="@layout/room_layout_banner"
+        app:image_scale_type="fit_xy" />
+
+    <LinearLayout
+        android:id="@+id/red_packet_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/banner"
+        android:layout_alignEnd="@+id/banner"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/room_bg_receive_red_packet"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/red_packet_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:text="0个"
+            android:textColor="#ffff482a"
+            android:textSize="6dp"
+            app:bl_corners_radius="5dp"
+            app:bl_solid_color="@color/white" />
+
+        <TextView
+            android:id="@+id/red_packet_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:text="59s"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="后结束领取"
+            android:textColor="#ffffff"
+            android:textSize="8dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/music_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/red_packet_layout"
+        android:layout_alignEnd="@+id/red_packet_layout"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/room_icon_top_music_playing" />
+
+
+</RelativeLayout>
+
+

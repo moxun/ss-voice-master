@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.miaomi.fenbei.common.weigdt.ColorfulFontTextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="我的昵称"
+                android:textColor="#70E6FF"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/iv_medal"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="5dp" />
+
+
+            <ImageView
+                android:id="@+id/role_iv"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/room_icon_user_flag_manager"
+                android:visibility="visible" />
+
+
+            <com.miaomi.fenbei.base.widget.LevelView
+                android:id="@+id/wealth_level_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/common_bg_level_wealth" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/label_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ssq_word_list"
+            android:padding="7dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <com.miaomi.fenbei.base.widget.GameSmallXXView
+                android:id="@+id/xx_game_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.miaomi.fenbei.base.widget.GameSmallXXView
+                android:id="@+id/xx_game_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.miaomi.fenbei.base.widget.GameSmallXXView
+                android:id="@+id/xx_game_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.miaomi.fenbei.base.widget.GameSmallXXView
+                android:id="@+id/xx_game_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.miaomi.fenbei.base.widget.GameSmallXXView
+                android:id="@+id/xx_game_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

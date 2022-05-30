@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zs_fl_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/sp10"
+    android:paddingBottom="@dimen/dd_dp13"
+    android:paddingTop="@dimen/dd_dp13"
+    android:paddingRight="@dimen/sp10"
+    android:background="@drawable/room_bg_item_gongping_zs_luck"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/zs_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#D55191"
+        android:lineSpacingExtra="2dp"
+        android:textSize="12dp"
+        android:layout_gravity="center"
+        />
+
+
+
+</FrameLayout>

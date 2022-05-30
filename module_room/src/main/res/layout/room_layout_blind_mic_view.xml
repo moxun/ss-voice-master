@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.miaomi.fenbei.room.widget.BlindMicItemView
+        android:id="@+id/mic_1_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="@id/mic_1_layout"
+        app:layout_constraintBottom_toBottomOf="@id/mic_1_layout"
+        app:layout_constraintStart_toEndOf="@id/mic_1_layout"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_blind_status_1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="61dp"
+            android:layout_height="21dp"
+            android:text="自我介绍"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:background="@drawable/room_bg_blind_status"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/tv_blind_status_2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="61dp"
+            android:layout_height="21dp"
+            android:text="嘉宾互动"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:background="@drawable/room_bg_blind_status"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/tv_blind_status_3"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="61dp"
+            android:layout_height="21dp"
+            android:text="权利反转"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:background="@drawable/room_bg_blind_status"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:id="@+id/tv_blind_status_4"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="61dp"
+            android:layout_height="21dp"
+            android:text="牵手成功"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:background="@drawable/room_bg_blind_status"
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="60dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="40dp"
+           android:layout_marginEnd="40dp"
+           android:orientation="horizontal">
+
+            <com.miaomi.fenbei.room.widget.BlindMicItemView
+                android:id="@+id/mic_2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@id/mic_1_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+           <com.miaomi.fenbei.room.widget.BlindMicItemView
+               android:id="@+id/mic_3_layout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintBottom_toBottomOf="@id/mic_2_layout"
+               app:layout_constraintStart_toEndOf="@id/mic_2_layout"
+               app:layout_constraintTop_toTopOf="@id/mic_2_layout" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <com.miaomi.fenbei.room.widget.BlindMicItemView
+               android:id="@+id/mic_7_layout"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+
+           <com.miaomi.fenbei.room.widget.BlindMicItemView
+               android:id="@+id/mic_8_layout"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <com.miaomi.fenbei.room.widget.BlindMicItemView
+               android:id="@+id/mic_4_layout"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintBottom_toBottomOf="@id/mic_5_layout"
+               app:layout_constraintEnd_toStartOf="@id/mic_5_layout"
+               app:layout_constraintTop_toTopOf="@id/mic_5_layout" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="40dp"
+           android:layout_marginEnd="40dp"
+           android:orientation="horizontal">
+
+           <com.miaomi.fenbei.room.widget.BlindMicItemView
+               android:id="@+id/mic_6_layout"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintBottom_toBottomOf="@id/mic_6_layout"
+               app:layout_constraintEnd_toStartOf="@id/mic_6_layout"
+               app:layout_constraintTop_toTopOf="@id/mic_6_layout" />
+
+           <com.miaomi.fenbei.room.widget.BlindMicItemView
+               android:id="@+id/mic_5_layout"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toStartOf="@id/mic_4_layout" />
+       </LinearLayout>
+   </LinearLayout>
+
+</merge>

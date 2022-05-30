@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.miaomi.fenbei.base">
+
+
+
+    <application>
+        <activity android:name="com.miaomi.fenbei.base.VideoRecordActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.miaomi.fenbei.base.SimplePlayerActivity"
+            android:label=""
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>

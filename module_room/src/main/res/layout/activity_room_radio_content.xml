@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <!--    <TextView-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:id="@+id/tv_party_room_hour"-->
+    <!--        android:drawableStart="@drawable/room_icon_small_hot_yellow"-->
+    <!--        android:drawablePadding="2dp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingStart="4dp"-->
+    <!--        android:paddingEnd="4dp"-->
+    <!--        android:paddingTop="2dp"-->
+    <!--        android:paddingBottom="2dp"-->
+    <!--        android:layout_marginStart="11dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:background="@drawable/bg_room_bottom_bt"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="距离上一位差123"-->
+    <!--        android:textColor="#ffffffff"-->
+    <!--        android:textSize="11sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_open_mortal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingStart="4dp"-->
+    <!--        android:paddingEnd="4dp"-->
+    <!--        android:paddingTop="2dp"-->
+    <!--        android:paddingBottom="2dp"-->
+    <!--        android:layout_marginStart="11dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:background="@drawable/bg_room_bottom_bt"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="启动"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:textColor="#ffffffff"-->
+    <!--        android:textSize="11sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_toEndOf="@id/tv_open_mortal"-->
+    <!--        android:id="@+id/tv_setting_mortal"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingStart="4dp"-->
+    <!--        android:paddingEnd="4dp"-->
+    <!--        android:paddingTop="2dp"-->
+    <!--        android:paddingBottom="2dp"-->
+    <!--        android:layout_marginStart="11dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:background="@drawable/bg_room_bottom_bt"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="设置"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:textColor="#ffffffff"-->
+    <!--        android:textSize="11sp" />-->
+
+    <ImageView
+        android:layout_width="157dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:src="@drawable/room_icon_radio_line"
+        tools:ignore="MissingConstraints" />
+
+    <com.miaomi.fenbei.room.widget.RadioMicView
+        android:id="@+id/radio_mic_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_open_mortal"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:drawablePadding="4dp"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:paddingTop="4dp"-->
+    <!--        android:paddingBottom="4dp"-->
+    <!--        android:text="灵兽牌 >"-->
+    <!--        android:textColor="#fffeaf7d"-->
+    <!--        android:textSize="12dp" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:id="@+id/tv_room_gift_history"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawablePadding="4dp"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:text="礼物记录"-->
+    <!--        android:textColor="#CCFFFFFF"-->
+    <!--        android:textSize="13dp"-->
+    <!--        android:paddingStart="8dp"-->
+    <!--        android:paddingEnd="8dp"-->
+    <!--        android:paddingBottom="4dp"-->
+    <!--        android:paddingTop="4dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:drawableStart="@drawable/icon_room_gift_history" />-->
+
+
+    <com.miaomi.fenbei.base.widget.WordListSelectedView
+        android:id="@+id/word_selet_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_mic_rv"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp" />
+
+    <com.miaomi.fenbei.base.widget.ChatLineRecyclerView
+        android:id="@+id/word_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/word_selet_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.miaomi.fenbei.room.widget.TopMsgView
+        android:id="@+id/tmv_top_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_selet_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="95dp" />
+
+    <TextView
+        android:id="@+id/new_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/word_list"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/room_new_msg_bg"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:text="99+新消息"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+
+    <com.miaomi.fenbei.base.widget.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        app:banner_layout="@layout/room_layout_banner"
+        app:image_scale_type="fit_xy" />
+
+
+    <ImageView
+        android:id="@+id/music_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/banner"
+        android:layout_alignEnd="@+id/banner"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/room_icon_top_music_playing" />
+
+
+</RelativeLayout>
+
+

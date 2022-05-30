@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+  >
+
+        <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="154dp"
+             android:gravity="center_vertical"
+             android:background="#2C0F59"
+            android:orientation="horizontal"
+            >
+
+         <View
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_report"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawablePadding="@dimen/dd_dp5"
+             android:drawableTop="@drawable/icon_report"
+             android:gravity="center"
+             android:text="举报"
+             android:textColor="#9587AA"
+             android:textSize="@dimen/dd_dp12" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dd_dp5"
+        android:drawableTop="@drawable/icon_block"
+        android:gravity="center"
+        android:text="拉黑"
+        android:textColor="#9587AA"
+        android:textSize="@dimen/dd_dp12" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dd_dp5"
+            android:drawableTop="@drawable/icon_clean"
+            android:gravity="center"
+            android:text="清除"
+            android:textColor="#9587AA"
+            android:textSize="@dimen/dd_dp12" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+        <TextView
+           android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+             android:layout_height="@dimen/dimen_size_44"
+            android:background="#32165E"
+            android:textSize="@dimen/dd_dp16"
+             android:gravity="center"
+            android:textColor="#FFFFFF"
+             android:text="取消"
+            />
+
+</LinearLayout>

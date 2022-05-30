@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="550dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff">
+
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:id="@+id/back_btn"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/common_back_arrow_black"
+                android:background="#ffffff"
+                android:layout_height="48dp"/>
+
+            <TextView
+                android:id="@+id/main_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="18dp"
+                android:textColor="@color/common_color_toolbar_title"
+                />
+
+            <ImageView
+                android:id="@+id/iv_care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/icon_c2c_user_care"
+                android:layout_marginEnd="15dp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.miaomi.fenbei.base.widget.xrecyclerview.XRecyclerView
+            android:id="@+id/rv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp">
+                <ImageView
+                    android:id="@+id/ll_voice"
+                    android:src="@drawable/bg_text_or_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/chat_voice_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:text="按住说话"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/bg_chat_input_text"/>
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:minHeight="32dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/bg_chat_input_text"
+                        android:textSize="14dp"
+                        android:textColor="#222222"
+                        android:maxLength="100"/>
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/ll_picture"
+                    android:src="@drawable/chat_icon_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+                    android:id="@+id/ll_emoji"
+                    android:src="@drawable/chat_icon_emoji"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@drawable/icon_c2c_msg_send" />
+            </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:visibility="gone"
+                android:id="@+id/vp_emoji"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <FrameLayout
+                android:visibility="gone"
+                android:id="@+id/fl_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_voice_status"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_voice_status"
+        android:layout_gravity="center"
+        android:paddingBottom="25dp">
+        <ImageView
+            android:id="@+id/iv_voice_status"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/record_anim"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_voice_status"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="手指上滑，取消发送"
+            android:textColor="#ffffffff"
+            android:textSize="14dp"
+            />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/room_icon_red_packet_luck_rank_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:src="@drawable/room_icon_orange_down_point"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手气排行榜"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="72dp"
+            android:textColor="#ff606266"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="1dp"
+            android:background="#EFEFEF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/got_num_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="领取16/20个"
+                android:textColor="#ffa8a8a8"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/total_diamond_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="总金额2000钻石"
+                android:textColor="#ffa8a8a8"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="275dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="1dp"
+            android:background="#EFEFEF"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rank_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/room_icon_first_charge_close"/>
+
+
+</LinearLayout>

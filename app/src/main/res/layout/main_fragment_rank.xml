@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/rank_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/room_rank_charm_bg"/>
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="35dp"
+        >
+        <ImageButton
+            android:layout_width="48dp"
+            android:id="@+id/back_btn"
+            android:visibility="gone"
+            android:src="@drawable/common_back_arrow_white"
+            android:background="@color/transparent"
+            android:layout_height="48dp"/>
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/tab_layout"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <!--        <com.google.android.material.tabs.TabLayout-->
+        <!--            android:id="@+id/tab_layout"-->
+        <!--            android:layout_width="160dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            app:tabIndicatorColor="@color/white"-->
+        <!--            app:tabSelectedTextColor="@color/white"-->
+        <!--            app:tabTextColor="#FFFFFF"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            app:tabIndicator="@drawable/layer_tab_indicator"-->
+        <!--            app:tabTextAppearance="@style/TabLayoutTextStyle"-->
+        <!--            />-->
+
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_rank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_toolbar"/>
+
+
+</RelativeLayout>

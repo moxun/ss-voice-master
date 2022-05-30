@@ -1,0 +1,14 @@
+<resources>
+    <string name="no_chinese">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.</string>
+    <string name="common_authorities">com.miaomi.liya.voice.FileProvider</string>
+    <string name="banner_type">0</string>
+    <string name="app_cash_out_success">提现成功,提现金额将在1–3个工作日到账</string>
+
+    <string name="record_hint1"> 请录制一段不少于5秒视频</string>
+    <string name="record_hint2"></string>
+    <string name="record_hint3">视频正在录制中</string>
+    <string name="record_toast_hint">录制不能少于5秒哦</string>
+    <string name="record_hint4">您的视频已录制完成</string>
+    <string name="record_again">重新录制</string>
+    <string name="record_audit">完成</string>
+</resources>

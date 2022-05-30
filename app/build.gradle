@@ -1,0 +1,216 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.alibaba.arouter'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.miaomi.liya.voice"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 2000
+        versionName "2.0.0"
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["moduleName": project.getName()]
+            }
+        }
+        kapt {
+            arguments {
+                arg("moduleName", project.getName())
+            }
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        manifestPlaceholders = [qqappid: "101885341"]
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'fenbei'
+            keyPassword 'mm940408'
+            storeFile file('fenbei.keystore')
+            storePassword 'mm940408'
+            v2SigningEnabled false
+        }
+        debug {
+            keyAlias 'fenbei'
+            keyPassword 'mm940408'
+            storeFile file('fenbei.keystore')
+            storePassword 'mm940408'
+            v2SigningEnabled false
+        }
+    }
+    buildTypes {
+        debug {
+            zipAlignEnabled true
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            signingConfig signingConfigs.release
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    // 多渠道打包配置名称
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def buildName = "山水语音"
+            def type = variant.buildType.name
+            def releaseApkName
+            releaseApkName = buildName + '_' + productFlavors.name + '_' + type + "_" + "${defaultConfig.versionName}" + '.apk'
+            outputFileName = releaseApkName
+        }
+    }
+
+    // 渠道配置
+    flavorDimensions "channel"
+    productFlavors {
+        gongzhonghao {
+            dimension "channel"
+        }//官方
+        fenbei_dsd {
+            dimension "channel"
+        }//腾讯应用宝
+//        qihu360 {
+//            dimension "channel"
+//        }//360
+        wandoujia {
+            dimension "channel"
+        }//豌豆荚
+//        huawei {
+//            dimension "channel"
+//        }//华为
+        ali {
+            dimension "channel"
+        }//阿里分发
+        xiaomi {
+            dimension "channel"
+        }//小米
+        oppo {
+            dimension "channel"
+        }//oppo
+        baidu {
+            dimension "channel"
+        }
+//        samsung {
+//            dimension "channel"
+//        }
+        vivo {
+            dimension "channel"
+        }
+        meizu {
+            dimension "channel"
+        }
+//        anzhi {
+//            dimension "channel"
+//        }
+
+        kimitg03 {
+            dimension "channel"
+        }
+        kuaishou {
+            dimension "channel"
+        }
+        qh360 {
+            dimension "channel"
+        }//qh360
+        fenbei_tg01 {
+            dimension "channel"
+        }//fenbei-tg01
+        fenbei_tg02 {
+            dimension "channel"
+        }// fenbei-tg02
+        fenbei_tg03 {
+            dimension "channel"
+        }//fenbei-tg03
+        fenbei_tg04 {
+            dimension "channel"
+        }// fenbei-tg04
+        fenbei_tg05 {
+            dimension "channel"
+        }// fenbei-tg05
+        fenbei_tg06 {
+            dimension "channel"
+        }//fenbei-tg06
+        fenbei_tg07 {
+            dimension "channel"
+        }// fenbei-tg07
+        fenbei_tg08 {
+            dimension "channel"
+        }// fenbei-tg08
+        fenbei_tg09 {
+            dimension "channel"
+        }//fenbei-tg09
+        fenbei_tg10 {
+            dimension "channel"
+        }// fenbei-tg10
+        zb01 {
+            dimension "channel"
+        }// zb01
+        fenbei_yhb01 {
+            dimension "channel"
+        }// fenbei_yhb01
+        fenbei_yhb02 {
+            dimension "channel"
+        }// fenbei_yhb02
+
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL: name]
+        }
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            jni.srcDirs = []    //disable automatic ndk-build
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'alipay', ext: 'aar')
+    implementation(name: 'linkaccount-v1.0.18', ext: 'aar')
+    implementation project(':module_base')
+    implementation project(':module_imkit')
+    kapt rootProject.ext.arouter
+    annotationProcessor rootProject.ext.arouter
+    implementation project(':module_room')
+    implementation project(':module_gift')
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10"
+}
+repositories {
+    mavenCentral()
+}

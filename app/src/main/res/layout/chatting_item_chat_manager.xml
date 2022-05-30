@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        tools:text="喵喵酱" />
+
+    <com.miaomi.fenbei.base.widget.SexView
+        android:id="@+id/user_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+        app:layout_constraintLeft_toRightOf="@+id/user_nick"
+        app:layout_constraintTop_toTopOf="@+id/user_nick" />
+
+    <com.miaomi.fenbei.base.widget.LevelView
+        android:id="@+id/iv_gongxian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+        app:layout_constraintLeft_toRightOf="@+id/user_sex"
+        app:layout_constraintTop_toTopOf="@+id/user_nick" />
+
+    <com.miaomi.fenbei.base.widget.LevelView
+        android:id="@+id/iv_meili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_nick"
+        app:layout_constraintLeft_toRightOf="@+id/iv_gongxian"
+        app:layout_constraintTop_toTopOf="@+id/user_nick" />
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="11dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        app:layout_constraintTop_toBottomOf="@+id/user_nick" />
+
+    <TextView
+        android:id="@+id/user_sign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="54dp"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="12dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/user_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_id"
+        tools:text="ID：123123213" />
+
+    <TextView
+        android:id="@+id/set_role_btn"
+        android:layout_width="48dp"
+        android:layout_height="26dp"
+        android:background="@drawable/common_button_enabled_style_new"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="设置" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
